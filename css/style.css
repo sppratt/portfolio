@@ -13,25 +13,13 @@
     top: 20px;
 }
 
-.inverted body {
-    background-color: #350047;
+button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #350047;
+    border-color: #350047;
+    background-color: lavender;
 }
 
-.inverted nav {
-    background-color: 350047;
-}
-
-.inverted nav a{
-    color: lavender;
-}
-
-.inverted h1 {
-    color: #e5bafb;
-}
-
-.inverted h2{
-    color: #e5bafb;
-}
 
 body{
     background-color: #e5bafb;

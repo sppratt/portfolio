@@ -3,11 +3,23 @@ figure {
 }
 
 .video {
-    width: 640px;
-    height: 360px;
+    width: 300px;
+    height: auto;
 }
 
 a {
     text-decoration: none;
     color: rgb(71, 0, 58);;
+}
+
+@media only screen and (min-width: 600px) {
+    .video {
+        width: 550px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .video {
+        width: 950px;
+    }
 }
