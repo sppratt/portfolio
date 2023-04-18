@@ -13,6 +13,30 @@
     top: 20px;
 }
 
+.inverted body {
+    background-color: #350047;
+}
+
+.inverted nav {
+    background-color: 350047;
+}
+
+.inverted nav a{
+    color: lavender;
+}
+
+.inverted h1 {
+    color: #e5bafb;
+}
+
+.inverted h2{
+    color: #e5bafb;
+}
+
+body{
+    background-color: #e5bafb;
+}
+
 @media screen and (prefers-reduced-motion: reduce){
     .skip a{
         -webkit-transition: none; /* sets to default setting */
@@ -33,14 +57,14 @@ nav a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 10px;
     padding: 10px;
-    color: black;
+    color: #350047;
     /* border: 2px solid rgb(53, 0, 71); */
     text-decoration: none;
 }
 
 .current a{
-    border: 3px solid rgb(53, 0, 71);
-    background-color: rgb(53, 0, 71);
+    border: 3px solid #350047;
+    background-color: #350047;
     color: lavender;
     
 }
@@ -49,15 +73,36 @@ nav a:hover, nav a:focus {
     border: 3px dotted rgb(53, 0, 71);
 }
 
+h1{
+    color: #350047;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    color: rgb(53, 0, 71);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 @media only screen and (min-width: 600px) {
     nav a{
         margin: 50px;
+    }
+
+    h1 {
+        padding: 30px;
+        font-size: 150%;
     }
 }
 
 @media only screen and (min-width: 1000px) {
     nav a{
         margin: 100px;
+    }
+    h1 {
+        padding: 40px;
+        font-size: 180%;
     }
 }
 
