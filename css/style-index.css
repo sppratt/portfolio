@@ -50,7 +50,8 @@ img {
 p{
     padding: 5px;
     visibility: hidden;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'IBM Plex Mono', Verdana, Arial, Helvetica, sans-serif;
+
     color: rgb(53, 0, 71);
     line-height: 130%;
 }

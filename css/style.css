@@ -14,16 +14,16 @@
 }
 
 button {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #350047;
-    border-color: #350047;
-    background-color: lavender;
+    font-family: 'IBM Plex Mono', Verdana, Arial, Helvetica, sans-serif;
+    color: black;
+    border-color: black;
+    /* background-color: white; */
 }
 
 
-body{
+/* body{
     background-color: #e5bafb;
-}
+} */
 
 @media screen and (prefers-reduced-motion: reduce){
     .skip a{
@@ -35,42 +35,53 @@ body{
 nav {
     text-align: center;
     padding: 25px;
-    background-color: lavender;
+    /* background-color: lavender; */
 }
 nav li {
     display: inline;
+    
 }
 nav a{
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Playfair Display', 'IBM Plex Mono', Verdana, Arial, Helvetica, sans-serif;
     margin: 10px;
     padding: 10px;
-    color: #350047;
+    color: black;
     /* border: 2px solid rgb(53, 0, 71); */
     text-decoration: none;
 }
 
 .current a{
-    border: 3px solid #350047;
-    background-color: #350047;
-    color: lavender;
+    /* border: 3px solid black; */
+    font-weight: 700;
+    color: blueviolet;
+    /* background-color: #350047; */
+    /* color: lavender; */
     
 }
 
 nav a:hover, nav a:focus {
-    border: 3px dotted rgb(53, 0, 71);
+    border: 3px dotted black;
 }
 
 h1{
-    color: #350047;
+    color: black;
     padding: 15px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'IBM Plex Mono', Verdana, Arial, Helvetica, sans-serif;
 }
+
+.name{
+    font-family: 'Playfair Display', 'IBM Plex Mono', Verdana, Arial, Helvetica, sans-serif;
+}
+
 h2{
-    color: rgb(53, 0, 71);
+    color: black;
+    padding: 0px 100px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80%;
+    line-height: 150%;
+    font-family: 'IBM Plex Mono', Verdana, Arial, Helvetica, sans-serif;
 }
 
 @media only screen and (min-width: 600px) {
@@ -82,6 +93,10 @@ h2{
         padding: 30px;
         font-size: 150%;
     }
+    h2 {
+        padding: 0px 150px;
+        font-size: 100%;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -91,6 +106,10 @@ h2{
     h1 {
         padding: 40px;
         font-size: 180%;
+    }
+    h2 {
+        padding: 0px 200px;
+        font-size: 120%;
     }
 }
 
