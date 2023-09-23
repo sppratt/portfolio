@@ -21,9 +21,7 @@ button {
 }
 
 
-/* body{
-    background-color: #e5bafb;
-} */
+
 
 @media screen and (prefers-reduced-motion: reduce){
     .skip a{
@@ -32,20 +30,37 @@ button {
         }
 
 }
-nav {
-    text-align: center;
-    padding: 25px;
-    /* background-color: lavender; */
+
+header {
+    width: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
 }
-nav li {
-    display: inline;
+
+.name{
+    display: block;
+    font-family: 'Playfair Display', 'IBM Plex Mono', Verdana, Arial, Helvetica, sans-serif;
+
+}
+/* nav {
+    text-align: right;
+    padding: 25px;
+    background-color: lavender;
+} */
+
+nav ul{
+    display: flex;
+    /* text-align: right; */
+
     
 }
 nav a{
-    text-align: center;
+    /* text-align: center; */
     font-family: 'Playfair Display', 'IBM Plex Mono', Verdana, Arial, Helvetica, sans-serif;
     margin: 10px;
-    padding: 10px;
+    padding-right: 10px;
     color: black;
     /* border: 2px solid rgb(53, 0, 71); */
     text-decoration: none;
@@ -53,11 +68,7 @@ nav a{
 
 .current a{
     /* border: 3px solid black; */
-    font-weight: 700;
-    color: blueviolet;
-    /* background-color: #350047; */
-    /* color: lavender; */
-    
+    text-decoration: underline;   
 }
 
 nav a:hover, nav a:focus {
@@ -71,9 +82,6 @@ h1{
     font-family: 'IBM Plex Mono', Verdana, Arial, Helvetica, sans-serif;
 }
 
-.name{
-    font-family: 'Playfair Display', 'IBM Plex Mono', Verdana, Arial, Helvetica, sans-serif;
-}
 
 h2{
     color: black;
@@ -85,9 +93,9 @@ h2{
 }
 
 @media only screen and (min-width: 600px) {
-    nav a{
+    /* nav a{
         margin: 50px;
-    }
+    } */
 
     h1 {
         padding: 30px;
@@ -100,9 +108,9 @@ h2{
 }
 
 @media only screen and (min-width: 1000px) {
-    nav a{
+    /* nav a{
         margin: 100px;
-    }
+    } */
     h1 {
         padding: 40px;
         font-size: 180%;
