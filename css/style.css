@@ -14,7 +14,7 @@
 }
 
 button {
-    font-family: 'IBM Plex Mono', Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     color: black;
     border-color: black;
     /* background-color: white; */
@@ -41,7 +41,7 @@ header {
 
 .name{
     display: block;
-    font-family: 'Playfair Display', 'IBM Plex Mono', Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 
 }
 /* nav {
@@ -58,7 +58,7 @@ nav ul{
 }
 nav a{
     /* text-align: center; */
-    font-family: 'Playfair Display', 'IBM Plex Mono', Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     margin: 10px;
     padding-right: 10px;
     color: black;
@@ -79,17 +79,18 @@ h1{
     color: black;
     padding: 15px;
     text-align: center;
-    font-family: 'IBM Plex Mono', Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+    
 }
 
 
 h2{
     color: black;
-    padding: 0px 100px;
-    text-align: center;
-    font-size: 80%;
-    line-height: 150%;
-    font-family: 'IBM Plex Mono', Verdana, Arial, Helvetica, sans-serif;
+    /* padding: 0px 100px; */
+    text-align: left;
+    font-size: 70%;
+    line-height: 125%;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 @media only screen and (min-width: 600px) {
@@ -98,11 +99,10 @@ h2{
     } */
 
     h1 {
-        padding: 30px;
+
         font-size: 150%;
     }
     h2 {
-        padding: 0px 150px;
         font-size: 100%;
     }
 }
@@ -112,11 +112,9 @@ h2{
         margin: 100px;
     } */
     h1 {
-        padding: 40px;
         font-size: 180%;
     }
     h2 {
-        padding: 0px 200px;
         font-size: 120%;
     }
 }
