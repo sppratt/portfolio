@@ -78,7 +78,7 @@ nav a:hover, nav a:focus {
 
 h1{
     color: black;
-    padding: 15px;
+    padding: 10px;
     text-align: left;
     font-family: 'IBM Plex Mono', monospace;
     
@@ -87,20 +87,29 @@ h1{
 
 h2{
     color: black;
-    padding: 35px 50px;
+    padding: 10px;
     text-align: left;
     font-size: 70%;
     line-height: 125%;
     font-family: 'IBM Plex Mono', monospace;
 }
 
-img{
-    padding: 25px 25px 25px 50px;
-    float: left;
-    max-width: 30%;
-    /* max-height:45%; */
+h3{
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 10px;
+    text-align: left;
+    font-size: 70%;
+    line-height: 125%;
 }
 
+.needs{
+    list-style-type: circle;
+}
+
+img{
+    padding: 0px 10px;
+    max-width: 100%;
+}
 
 @media only screen and (min-width: 600px) {
     /* nav a{
@@ -113,11 +122,11 @@ img{
     }
     h2 {
         font-size: 100%;
-        padding: 75px 150px;
+        padding: 25px 150px 25px 125px;
     }
     img{
-        padding: 50px 50px 50px 150px;
-        max-width: 30%;
+        width: auto;
+        padding: 0px 125px;
     }
 }
 
@@ -130,12 +139,13 @@ img{
     }
     h2 {
         font-size: 120%;
-        padding: 150px 200px;
+        padding: 50px 200px 50px 150px;
     }
     img{
-        padding: 75px 75px 75px 200px;
-        max-width: 30%;
+        width: 1200px;
+        padding: 0px 150px
     }
+
 }
 
 
