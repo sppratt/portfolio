@@ -34,6 +34,7 @@ header {
     /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
+    margin: 5px;
 }
 
 .name{
@@ -76,10 +77,15 @@ nav a:hover, nav a:focus {
     
 }
 
+.icon{
+    width: 25px;
+    padding: 75px;
+}
+
 h1{
     color: black;
     padding: 15px;
-    text-align: left;
+    text-align: center;
     font-family: 'IBM Plex Mono', monospace;
     
 }
@@ -94,10 +100,17 @@ h2{
     font-family: 'IBM Plex Mono', monospace;
 }
 
+.caption{
+    text-align: center;
+    padding: 0px;
+}
+
 img{
-    padding: 25px 25px 25px 50px;
-    float: left;
-    max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    max-width: 20%;
     /* max-height:45%; */
 }
 
@@ -117,7 +130,6 @@ img{
     }
     img{
         padding: 50px 50px 50px 150px;
-        max-width: 30%;
     }
 }
 
@@ -128,13 +140,16 @@ img{
     h1 {
         font-size: 180%;
     }
+
+    .title{
+        padding: 50px;
+    }
     h2 {
         font-size: 120%;
         padding: 150px 200px;
     }
     img{
-        padding: 75px 75px 75px 200px;
-        max-width: 30%;
+        padding: 25px;
     }
 }
 

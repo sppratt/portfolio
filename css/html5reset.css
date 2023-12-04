@@ -90,10 +90,10 @@ table {
 /* change border colour to suit your needs */
 hr {
     display:block;
-    height:1px;
+    /* height:1px; */
     border:0;   
-    border-top:1px solid #dc9292;
-    margin:1em 0;
+    border-top:1px solid black;
+    margin:0;
     padding:0;
 }
 
