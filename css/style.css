@@ -13,12 +13,7 @@
     top: 20px;
 }
 
-button {
-    font-family: 'IBM Plex Mono', monospace;
-    color: black;
-    border-color: black;
-    /* background-color: white; */
-}
+
 
 @media screen and (prefers-reduced-motion: reduce){
     .skip a{
@@ -51,9 +46,9 @@ header {
 nav ul{
     display: flex;
     /* text-align: right; */
-
     
 }
+
 nav a{
     /* text-align: center; */
     font-family: 'IBM Plex Sans', sans-serif;
@@ -78,8 +73,8 @@ nav a:hover, nav a:focus {
 }
 
 .icon{
-    width: 25px;
-    padding: 75px;
+    width: 10px;
+    padding: 30px;
 }
 
 h1{
@@ -90,7 +85,6 @@ h1{
     
 }
 
-
 h2{
     color: black;
     padding: 35px 50px;
@@ -98,6 +92,35 @@ h2{
     font-size: 70%;
     line-height: 125%;
     font-family: 'IBM Plex Mono', monospace;
+}
+
+h3{
+    color: black;
+    font-family: 'IBM Plex Mono', monospace; 
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 25px;
+}
+
+a.connect{
+    color: black;
+    /* text-decoration: none; */
+}
+
+.button{
+    background-color: white;
+    border: none;
+    color: black;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: underline;
+
 }
 
 .caption{
@@ -114,6 +137,47 @@ img{
     /* max-height:45%; */
 }
 
+.outer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 550px;
+    margin-bottom: 50px;
+}
+
+.project {
+    text-align: center;
+    max-width: 600px; /* Set a maximum width if needed */
+    width: 100%; /* Ensure it takes the full width within the maximum width */
+}
+
+.project a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project img {
+    margin-left: 10px;
+    max-width: 100px;
+}
+
+.project-text {
+    text-align: right;
+}
+
+.project-text h2{
+    padding: 10px;
+    text-align: right;
+}
+.project-text h1{
+    /* padding: 10px; */
+    text-align: right;
+}
+
+
 
 @media only screen and (min-width: 600px) {
     /* nav a{
@@ -129,7 +193,12 @@ img{
         padding: 75px 150px;
     }
     img{
-        padding: 50px 50px 50px 150px;
+        padding: 50px;
+    }
+
+    .icon{
+        width: 15px;
+        padding: 40px;
     }
 }
 
@@ -151,6 +220,33 @@ img{
     img{
         padding: 25px;
     }
+    .icon{
+        width: 25px;
+        padding: 50px;
+    }
+
+ 
+    .project {
+        text-align: center;
+        max-width: 1200px; /* Set a maximum width if needed */
+        width: 100%; /* Ensure it takes the full width within the maximum width */
+    }
+    
+    .project a {
+        text-decoration: none;
+        color: black; /* Adjust the color as needed */
+        display: flex;
+        align-items: center;
+    }
+    
+    .project img {
+        margin-right: 0px;
+        margin-left: 10px; /* Adjust the margin as needed for spacing between text and image */
+        max-width: 600px; /* Adjust the max-width as needed */
+    }
+    /* h2.project-text{
+        padding: 10px;
+    } */
 }
 
 
