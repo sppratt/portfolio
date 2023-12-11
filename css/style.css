@@ -129,6 +129,10 @@ a.connect{
     text-align: center;
     padding: 0px;
 }
+.bottom{
+    text-align: center;
+    padding: 0px 0px 25px;
+}
 
 img{
     display: block;
@@ -230,6 +234,9 @@ img{
 
     .caption{
         padding: 25px;
+    }
+    .bottom{
+        padding: 25px 0px 75px;
     }
     img{
         padding: 50px;
