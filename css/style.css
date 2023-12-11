@@ -224,6 +224,10 @@ img{
         padding: 150px 200px;
     }
 
+    h3 {
+        font-size: 1.5em
+    }
+
     .caption{
         padding: 25px;
     }
