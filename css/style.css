@@ -52,6 +52,7 @@ nav ul{
 nav a{
     /* text-align: center; */
     font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.5em;
     margin: 10px;
     padding-right: 10px;
     color: black;
@@ -67,7 +68,7 @@ nav a{
 nav a:hover, nav a:focus {
     /* border: 3px dotted black; */
     /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     
 }
@@ -218,11 +219,11 @@ img{
         padding: 150px 200px;
     }
     img{
-        padding: 25px;
+        padding: 50px;
     }
     .icon{
         width: 25px;
-        padding: 50px;
+        padding: 100px;
     }
 
  
