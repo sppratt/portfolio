@@ -13,8 +13,6 @@
     top: 20px;
 }
 
-
-
 @media screen and (prefers-reduced-motion: reduce){
     .skip a{
         -webkit-transition: none; /* sets to default setting */
@@ -26,7 +24,6 @@
 header {
     width: 100%;
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
     margin: 5px;
@@ -37,37 +34,27 @@ header {
     font-family: 'IBM Plex Sans', sans-serif;
 
 }
-/* nav {
-    text-align: right;
-    padding: 25px;
-    background-color: lavender;
-} */
 
 nav ul{
     display: flex;
-    /* text-align: right; */
     
 }
 
 nav a{
-    /* text-align: center; */
+
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1.5em;
     margin: 10px;
     padding-right: 10px;
     color: black;
-    /* border: 2px solid rgb(53, 0, 71); */
     text-decoration: none;
 }
 
 .current a{
-    /* border: 3px solid black; */
     text-decoration: underline;   
 }
 
 nav a:hover, nav a:focus {
-    /* border: 3px dotted black; */
-    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
     font-size: 1.7em;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     
@@ -82,8 +69,7 @@ h1{
     color: black;
     padding: 15px;
     text-align: center;
-    font-family: 'IBM Plex Mono', monospace;
-    
+    font-family: 'IBM Plex Mono', monospace;  
 }
 
 h2{
@@ -91,7 +77,6 @@ h2{
     padding: 35px 50px;
     text-align: left;
     font-size: 1.05em;
-    /* line-height: 125%; */
     font-family: 'IBM Plex Mono', monospace;
 }
 
@@ -105,13 +90,11 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 15px 25px;
 }
 
 a.connect{
     color: black;
-    /* text-decoration: none; */
 }
 
 .button{
@@ -122,7 +105,6 @@ a.connect{
     font-size: 1em;
     font-weight: bold;
     text-decoration: underline;
-
 }
 
 .caption{
@@ -140,7 +122,6 @@ img{
     margin-right: auto;
     padding: 25px;
     max-width: 20%;
-    /* max-height:45%; */
 }
 
 .outer-container {
@@ -153,8 +134,8 @@ img{
 
 .project {
     text-align: center;
-    max-width: 600px; /* Set a maximum width if needed */
-    width: 100%; /* Ensure it takes the full width within the maximum width */
+    max-width: 600px;
+    width: 100%;
 }
 
 .project a {
@@ -166,7 +147,6 @@ img{
 }
 
 .project img {
-    /* margin-left: 10px; */
     max-width: 100px;
 }
 
@@ -175,29 +155,25 @@ img{
 }
 
 .project-text h2{
-    /* padding: 10px; */
     text-align: right;
 }
 .project-text h1{
-    /* padding: 10px; */
     text-align: right;
 }
 
 
 
 @media only screen and (min-width: 600px) {
-    /* nav a{
-        margin: 50px;
-    } */
-
     h1 {
 
         font-size: 3em;
     }
+
     h2 {
         font-size: 1.5em;
         padding: 75px 150px;
     }
+
     img{
         padding: 50px;
     }
@@ -209,23 +185,19 @@ img{
 }
 
 @media only screen and (min-width: 1000px) {
-    /* nav a{
-        margin: 100px;
-    } */
-    h1 {
-        font-size: 3.6em;
-    }
 
-    .name h1{
+    h1 {
         font-size: 3em;
     }
 
     .title{
         padding: 75px 0px 50px;
+        font-size: 3.6em;
     }
+    
     h2 {
         font-size: 1.8em;
-        padding: 150px 200px;
+        padding: 25px;
     }
 
     h3 {
@@ -235,39 +207,38 @@ img{
     .caption{
         padding: 25px;
     }
+
     .bottom{
         padding: 25px 0px 75px;
     }
+
     img{
         padding: 50px;
     }
+
     .icon{
         width: 25px;
         padding: 50px 50px 100px;
     }
 
- 
     .project {
         text-align: center;
-        max-width: 1500px; /* Set a maximum width if needed */
-        width: 100%; /* Ensure it takes the full width within the maximum width */
+        max-width: 1500px; 
+        width: 100%;
     }
     
     .project a {
         text-decoration: none;
-        color: black; /* Adjust the color as needed */
+        color: black;
         display: flex;
         align-items: center;
     }
     
     .project img {
         margin-right: 0px;
-        /* margin-left: 10px; Adjust the margin as needed for spacing between text and image */
-        max-width: 600px; /* Adjust the max-width as needed */
+        max-width: 600px; 
     }
-    /* h2.project-text{
-        padding: 10px;
-    } */
+
 }
 
 
