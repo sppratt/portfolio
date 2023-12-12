@@ -60,7 +60,7 @@ window.addEventListener("load", function () {
             inverted.style.border = "1px solid #ffffff";
 
             // Update the text around the button
-            let buttonText = "☀⋆⁺₊⋆ | built from scratch with lots of love and coffee <3";
+            let buttonText = "☀⋆⁺₊⋆<br>built from scratch with lots of love and coffee <3";
             let footerText = document.querySelector(".left h3");
             if (footerText) {
                 footerText.innerHTML = `⋆⁺₊⋆<button id="invert" class="button">invert colors</button>${buttonText}`;
