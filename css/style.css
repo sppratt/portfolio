@@ -107,12 +107,17 @@ footer{
     justify-content: space-between;
     /* align-items: center; */
 
-    
+
     padding: 0px;
     font-size: 12px;
     line-height: 150%;
     text-align: center;
     
+}
+
+footer h3{
+    font-family: 'IBM Plex Sans', sans-serif;
+
 }
 
 
@@ -125,7 +130,7 @@ a.connect{
     background-color: white;
     border: none;
     color: black;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1em;
     font-weight: bold;
     text-decoration: underline;
@@ -146,18 +151,41 @@ img{
     /* max-height:45%; */
 }
 
-.outer-container {
+.outer-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100px;
+    width: 100%;
 }
 
+.project {
+    border: 1px solid;
+    /* max-width: 300px; Set a maximum width if needed */
+    width: 90%; /* Ensure it takes the full width within the maximum width */
+    align-self: center;
+}
+.project a {
+    text-decoration: none;
+    color: black; /* Adjust the color as needed */
+    text-align: center;
+    /* padding-top: 0px; */
+    
+}
+.project h2{
+    padding: 0px 15px ;
+    text-align: center;
+}
 
+.project img{
+    max-width: 50%;
+    padding-top: 15px;
+    
+
+}
 
 .bottom{
     text-align: center;
-    padding: 0px 0px 50px 0px;
+    padding: 50px 0px;
 }
 
 
@@ -235,9 +263,14 @@ img{
         padding-bottom: 15px;
     }
 
- 
+    .project h1{
+        text-align: right;
+    }
+    .project h2{
+        text-align: right;
+    }
     .project {
-        text-align: center;
+
         max-width: 1200px; /* Set a maximum width if needed */
         width: 100%; /* Ensure it takes the full width within the maximum width */
     }
@@ -250,11 +283,14 @@ img{
     }
     
     .project img {
-        margin-right: 90px;
-        margin-left: 10px; /* Adjust the margin as needed for spacing between text and image */
+        margin-right: 80px;
+        margin-left: 0px; /* Adjust the margin as needed for spacing between text and image */
         max-width: 600px; /* Adjust the max-width as needed */
     }
 
+    .bottom{
+        padding-top: 25px;
+    }
     footer{
         font-size: 18px;
         padding: 10px 25px;

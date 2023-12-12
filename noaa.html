@@ -31,37 +31,158 @@
     <hr>
     <main>
         <h1 class = "title">NOAA GLANSIS Website Redesign</h1>
-        <h2>Client: National Oceanic and Atmospheric Administration (NOAA)
-            <br><br>Duration: August 2023-December 2023
-            <br><br>Goal: Redesign the Species List Generator tool on the Great Lakes Aquatic Nonindigenous Species Information System (GLANSIS) website
-            <br><br>Tools: Notability, Figma
-            <br><br>Target Audiences: Great Lakes Researchers, Natural Resouce Managers, AIS decision-makers, K-16 Educators
-        </h2>
+        <div class="section">
+            <h2>Client:</h2>
+            <h2 class="sans">National Oceanic and Atmospheric Administration (NOAA)</h2>
+            <h2>Duration:</h2>
+            <h2 class="sans">August 2023-December 2023</h2>
+            <h2>Goal:</h2>
+            <h2 class="sans">Redesign the Species List Generator tool on the Great Lakes Aquatic Nonindigenous Species Information System (GLANSIS) website</h2>
+            <h2>Tool:</h2>
+            <h2 class="sans">Figma</h2>
+            <h2>Target Audiences:</h2>
+            <h2 class="sans">Great Lakes Researchers, Natural Resouce Managers, AIS decision-makers, K-16 Educators</h2>
+        </div>
+
+        <div class="section">
+            <h2>Executive Summary</h2>
+            <h2 class="sans">The GLANSIS Species List Generator uses filtering to create a list of invasive species within selected categories. My redesign of this tool addresses usability challenges by streamlining filters and navigation for resource managers, researchers, and the public. With simplified filters, clear icons, and more readable species profiles, the tool aims to facilitate users in efficiently managing invasive species in the Great Lakes and transform the user experience so that searching for a new species profile is easy, not frustrating.</h2>
+        </div>
     
-        <h2>Design Process<br><br>1.Empathize<br>2.Define<br>3.Ideate<br>4.Prototyp<br>5.Test<br>6.Assess</h2>
-    
-        <h2>User Research (obtained from Dr. Sturtevant at GLANSIS):</h2>
-        <h3>Scenario 1: state/federal manager asked to approve permit to import species</h3>
-        <ul class="needs">
-            <li><h3>&#8226; goes to risk assessment clearinghouse</h3></li>
-            <li><h3>&#8226; species level risk assessments explorer</h3></li>
-            <li><h3>&#8226; type in nile tilapia -> makes you also put in full species name</h3></li>
-        </ul>
-        <h3>Scenario 2: a local resource manager wants to know what invasive species are in their local management area that they should control</h3>
-        <ul class="needs">
-            <li><h3>&#8226; list generator</h3></li>
-            <li><h3>&#8226; must know HUC code -> average citizen may not know this</h3></li>
-        </ul>
-        <h3>Scenario 3: a researcher is planning a project to test a hypothesis about the food web of a particular habitat</h3>
+        <div class="section">
+            <h2>Design Process</h2>
+            <h2 class = "sans">1. Empathize<br>2. Define<br>3. Ideate<br>4. Prototype<br>5. Test<br>6. Assess</h2>
+        </div>
         
-        <h3>Scenario 4: a science teacher needs a lesson for their 8th grade students which is aligned to the next generation science standard on ecosystem -- they would also like an age-appropriate video to accompany their lessons</h3>
+        <div class="section">
+            <h2>User Research (obtained from Dr. Sturtevant at GLANSIS):</h2>
+            <h3 class = "sans">Scenario 1: state/federal manager asked to approve permit to import species</h3>
+            <ul class="needs">
+                <li><h3 class = "sans">&#8226; goes to risk assessment clearinghouse</h3></li>
+                <li><h3 class = "sans">&#8226; species level risk assessments explorer</h3></li>
+                <li><h3 class = "sans">&#8226; type in nile tilapia -> makes you also put in full species name</h3></li>
+            </ul>
+            <h3 class = "sans">Scenario 2: a local resource manager wants to know what invasive species are in their local management area that they should control</h3>
+            <ul class="needs">
+                <li><h3 class = "sans">&#8226; list generator</h3></li>
+                <li><h3 class = "sans">&#8226; must know HUC code -> average citizen may not know this</h3></li>
+            </ul>
+            <h3 class = "sans">Scenario 3: a researcher is planning a project to test a hypothesis about the food web of a particular habitat</h3>
+            
+            <h3 class = "sans">Scenario 4: a science teacher needs a lesson for their 8th grade students which is aligned to the next generation science standard on ecosystem -- they would also like an age-appropriate video to accompany their lessons</h3>
+            
+            <h3 class = "sans">Scenario 5: 4th grade student has been assigned to write a paper on local invasive species</h3>
         
-        <h3>Scenario 5: 4th grade student has been assigned to write a paper on local invasive species</h3>
-    
-    
-        <h2>Brainstorming Sketches</h2>
-        <img src="images/Sketches.png" alt="Skecthes of five pages of the GLANSIS site on mobile">
-    </main>
+        </div>
+
+        <div class="section">
+            <h2>Problem Statement</h2>
+            <h2 class="sans">Thirty million people rely on the Great Lakes for water. GLANSIS recorded 180 invasive species that harm biodiversity, water quality, and the economy. North America loses $26 billion per year due to invasive species. They introduce toxins and inhibit nutrient flow in the food chain. Resource managers use the Species List Generator on GLANSIS’s website in search of species to control in their area. However, the species profiles are cluttered, inaccessible text walls of data needed to enact regulations.</h2>
+        </div>
+
+        <div class="section">
+            <h2>Design Oriented Approach</h2>
+            <h3 class="sans">
+                <ul>
+                <!-- <ul class="bullet-list"> -->
+                    <li>The waterfall approach is the best fit for Dr. Rochelle Sturtevant’s team at GLANSIS.</li>
+                    <li>Success with the agile approach requires a small team of highly skilled designers and developers.</li>
+                    <li>Familiarity with the agile approach is crucial, which is lacking in Dr. Sturtevant's team.</li>
+                    <li>The lean UX approach, requiring trial and error, is unsuitable for the team without prior experience.</li>
+                    <li>Navigating the website redesign through a scientific methodology is the most practical approach for a scientific team like GLANSIS.</li>
+                    <li>The waterfall approach's systematic method aligns closely with the scientific method.</li>
+                    <li>Dr. Sturtevant has a detailed understanding of project requirements, reducing the risk of timeline disruptions.</li>
+                    <li>Project goals, including the four major tools on the site, are clearly established in advance.</li>
+                    <li>Overall, the waterfall approach aligns with Dr. Sturtevant’s prior work environment, providing a clear breakdown of steps, determining the end product, timeline, and budget early on.</li>
+                    <li>The waterfall approach aligns strategically with GLANSIS’s management style and organizational culture, ensuring success in the redesign.</li>
+                </ul>
+            </h3>
+        </div>    
+        
+        <div class="section">
+            <h2>Brainstorming Sketches</h2>
+            <img src="images/Sketches.png" alt="Skecthes of five pages of the GLANSIS site on mobile">
+        </div>
+
+        <div class="section">
+            <h2>Wireframes</h2>
+            <div class = "prototype">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FPtNwARq7SA1ARGQpqwCKoC%2FGLANSIS-Redesign%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-2%26viewport%3D381%252C356%252C0.2%26t%3DrCrxxeWpu46QcuIR-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2%26mode%3Ddesign" allowfullscreen></iframe>            </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Prototype</h2>
+            <div class = "prototype">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FPtNwARq7SA1ARGQpqwCKoC%2FGLANSIS-Redesign%3Fpage-id%3D210%253A406%26type%3Ddesign%26node-id%3D210-737%26viewport%3D860%252C402%252C0.2%26t%3DJZFkSdraAs24jd5Y-1%26scaling%3Dscale-down%26mode%3Ddesign" allowfullscreen></iframe>            </div>
+        </div>
+
+        <div class="section">
+            <h2>Usability Testing</h2>
+            <h3 class="sans">Task 1: You are a fish expert searching for the fish of the Alosa genus, so you come to the GLANSIS site to search for that specific genus.</h3>
+
+            <h3 class="sans">
+                <ul>
+                    <li>Observations: At first, she wanted to search for the Alosa genus using the species list generator rather than the quick species search icon at the top of the page.  She ultimately realized pretty quickly that that was the wrong place to look and that there was a search icon. Also, she was able to figure out how to click on the search bar to type “Alo” and see the results with ease.</li>
+                </ul>
+            </h3>
+            
+            <h3 class="sans"><br>Task 2: You are a student studying invasive species, so you want the number of nonindigenous fish that have been recorded.</h3>
+            <h3 class="sans">
+                <ul>
+                    <li>Observations: She was able to find the species list generator quickly and saw that the species category was defaulted to “nonindigenous”, and found the submit button very soon after reading two dropdowns. Once she saw the list of species, she took a couple of seconds before declaring that there were 30 results, which was clear was the number of fish that had been recorded, thus, successfully completing the task.</li>
+                </ul>
+            </h3>
+            <h3 class="sans"><br>Task 3: You are using GLANSIS for the first time, so you are exploring the species list generator tool, but want to see the other tools available on the site.</h3>
+            <h3 class="sans">
+                <ul>
+                    <li>Observations: She realized rather quickly when she was on the species list generator tool that she could use the hamburger icon to see other tools to navigate, too. While that was my intended action, I was curious to see if she would go back home to see the other tools. Overall, it seems the hamburger menu conveyed its intended action of its use to navigate back and forth between pages of the site successfully.</li>
+                </ul>
+            </h3>
+        </div>
+
+        <div class="section">
+            <h2>Updated Mobile Design</h2>
+            <div class = "prototype">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkgP8qrMXCaJTeDFbuvJECi%2FGLANSIS-DECK%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D16-3086%26viewport%3D489%252C339%252C0.17%26t%3DvPbSJlHouhk2EvdV-1%26scaling%3Dscale-down%26mode%3Ddesign" allowfullscreen></iframe>            </div>
+        </div>
+
+        <div class="section">
+            <h2>Desktop Design</h2>
+            <div class = "prototype">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkgP8qrMXCaJTeDFbuvJECi%2FGLANSIS-DECK%3Fpage-id%3D102%253A9324%26type%3Ddesign%26node-id%3D125-12521%26viewport%3D110%252C274%252C0.11%26t%3D0Spq1nXEJGAE3R4b-1%26scaling%3Dscale-down%26mode%3Ddesign" allowfullscreen></iframe>            </div>
+        </div>
+
+        <div class="section">
+            <h2>Three Key Design Decisions</h2>
+            
+            <h3 class="sans">Eliminate Common Pitfalls of the List Generator Page:</h3>
+
+            <h3 class="sans">
+                <ul>
+                    <li>Navigating the List Generator Page can be confusing, especially when presented with so many options. By prioritizing the two most commonly used filters of “Species Category” and “ Lake (HUC)” and collapsing other filters in the “Advanced Search” drop down, the goal is to minimize confusion. Additionally, removing filters such as “Group” and “Status” aims to eliminate the misuse of unclear and complicated filters. Lastly, including the information icons next to each filter clarifies how the user can get help and doesn’t leave users guessing what terminology means.</li>
+                </ul>
+            </h3>
+            
+            <h3 class="sans"><br>Improve Access to Important Information:</h3>
+            <h3 class="sans">
+                <ul>
+                    <li>Many users simply want to write down the number of results generated, while others primarily need the newest additions to the database. Placing the total number of results in the top left corner was a big priority. Removing sort options from the List Generator Page and defaulting the sorting order to newest to oldest on the List Page allows for the greatest number of users to access the information they need quickly. Maintaining additional sort and filtering options on the List Page allows users to narrow down further after using the more general filters on the List Generator Page. This saves space in a user’s memory as they are presented with all of the information they need on the screen in front of them, so they can focus on the important things.</li>
+                </ul>
+            </h3>
+            <h3 class="sans"><br>Intuitive Navigation and Searching:</h3>
+            <h3 class="sans">
+                <ul>
+                    <li>The GLANSIS database is vast, so efficient navigation is essential. Including all of the key tools in the header and in the hamburger menu permits users to access the information they need from anywhere on the site. Additionally, now they can search for a species they’re looking for at any time. Dr. Sturtevant emphasized the importance of accessing species search quickly, and Fitt’s Law tells us that the closer elements are to the top, the quicker you can access it. Auto-suggesting recently searched species and filling in the algorithm’s best guess at what species you are about to type expedites the searching process further.</li>
+                </ul>
+            </h3>
+            
+        </div>
+
+        
+
+        
+        </main>
     <hr>
     <footer>
         <div class="left">

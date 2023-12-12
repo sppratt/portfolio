@@ -38,6 +38,19 @@ window.addEventListener("load", function () {
             rightText.forEach(function (text) {
                 text.style.color = "#ffffff";
             });
+            let section = document.querySelectorAll(".section");
+            section.forEach(function (text) {
+                text.style.border = "1px solid white";
+            });
+
+            let h3Text = document.querySelectorAll("h3");
+            h3Text.forEach(function (text) {
+                text.style.color = "#ffffff";
+            });
+            let h2Text = document.querySelectorAll("h2");
+            h2Text.forEach(function (text) {
+                text.style.color = "#ffffff";
+            });
 
             let rightLinks = document.querySelectorAll(".right a.connect");
             rightLinks.forEach(function (link) {
