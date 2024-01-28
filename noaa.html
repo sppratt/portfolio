@@ -33,6 +33,23 @@
     <hr>
     <main>
         <h1 class = "title">NOAA GLANSIS Website Redesign</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#approach">Approach</a></li>
+                <li><a href="#sketches">Sketches</a></li>
+                <li><a href="#wireframes">Wireframes</a></li>
+                <li><a href="#prototype">Prototype</a></li>
+                <li><a href="#testing">Testing</a></li>
+                <li><a href="#mobile">Mobile Design</a></li>
+                <li><a href="#desktop">Desktop Design</a></li>
+                <li><a href="#decisions">Key Design Decisions</a></li>
+            </ul>
+        </nav>
         <div class="section">
             <h2>Client:</h2>
             <h2 class="sans">National Oceanic and Atmospheric Administration (NOAA)</h2>
@@ -46,26 +63,26 @@
             <h2 class="sans">Great Lakes Researchers, Natural Resouce Managers, AIS decision-makers, K-16 Educators</h2>
         </div>
 
-        <div class="section">
+        <div class="section" id="summary">
             <h2>Executive Summary</h2>
             <h2 class="sans">The GLANSIS Species List Generator uses filtering to create a list of invasive species within selected categories. My redesign of this tool addresses usability challenges by streamlining filters and navigation for resource managers, researchers, and the public. With simplified filters, clear icons, and more readable species profiles, the tool aims to facilitate users in efficiently managing invasive species in the Great Lakes and transform the user experience so that searching for a new species profile is easy, not frustrating.</h2>
         </div>
     
-        <div class="section">
+        <div class="section" id="process">
             <h2>Design Process</h2>
             <h2 class = "sans">1. Empathize<br>2. Define<br>3. Ideate<br>4. Prototype<br>5. Test<br>6. Assess</h2>
         </div>
         
-        <div class="section">
+        <div class="section" id="research">
             <h2>User Research (obtained from Dr. Sturtevant at GLANSIS):</h2>
             <h3 class = "sans">Scenario 1: state/federal manager asked to approve permit to import species</h3>
-            <ul class="needs">
+            <ul class="needs" style="list-style: none;">
                 <li><h3 class = "sans">&#8226; goes to risk assessment clearinghouse</h3></li>
                 <li><h3 class = "sans">&#8226; species level risk assessments explorer</h3></li>
                 <li><h3 class = "sans">&#8226; type in nile tilapia -> makes you also put in full species name</h3></li>
             </ul>
             <h3 class = "sans">Scenario 2: a local resource manager wants to know what invasive species are in their local management area that they should control</h3>
-            <ul class="needs">
+            <ul class="needs" style="list-style: none;">
                 <li><h3 class = "sans">&#8226; list generator</h3></li>
                 <li><h3 class = "sans">&#8226; must know HUC code -> average citizen may not know this</h3></li>
             </ul>
@@ -77,12 +94,12 @@
         
         </div>
 
-        <div class="section">
+        <div class="section" id = problem>
             <h2>Problem Statement</h2>
             <h2 class="sans">Thirty million people rely on the Great Lakes for water. GLANSIS recorded 180 invasive species that harm biodiversity, water quality, and the economy. North America loses $26 billion per year due to invasive species. They introduce toxins and inhibit nutrient flow in the food chain. Resource managers use the Species List Generator on GLANSIS’s website in search of species to control in their area. However, the species profiles are cluttered, inaccessible text walls of data needed to enact regulations.</h2>
         </div>
 
-        <div class="section">
+        <div class="section" id="approach">
             <h2>Design Oriented Approach</h2>
             <h3 class="sans">
                 <ul>
@@ -101,25 +118,25 @@
             </h3>
         </div>    
         
-        <div class="section">
+        <div class="section" id="sketches">
             <h2>Brainstorming Sketches</h2>
             <img src="images/Sketches.png" alt="Skecthes of five pages of the GLANSIS site on mobile">
         </div>
 
-        <div class="section">
+        <div class="section" id="wireframes">
             <h2>Wireframes</h2>
             <div class = "prototype">
                 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FPtNwARq7SA1ARGQpqwCKoC%2FGLANSIS-Redesign%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-2%26viewport%3D381%252C356%252C0.2%26t%3DrCrxxeWpu46QcuIR-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2%26mode%3Ddesign" allowfullscreen></iframe>            </div>
             </div>
         </div>
 
-        <div class="section">
+        <div class="section" id="prototype">
             <h2>Prototype</h2>
             <div class = "prototype">
                 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FPtNwARq7SA1ARGQpqwCKoC%2FGLANSIS-Redesign%3Fpage-id%3D210%253A406%26type%3Ddesign%26node-id%3D210-737%26viewport%3D860%252C402%252C0.2%26t%3DJZFkSdraAs24jd5Y-1%26scaling%3Dscale-down%26mode%3Ddesign" allowfullscreen></iframe>            </div>
         </div>
 
-        <div class="section">
+        <div class="section" id="testing">
             <h2>Usability Testing</h2>
             <h3 class="sans">Task 1: You are a fish expert searching for the fish of the Alosa genus, so you come to the GLANSIS site to search for that specific genus.</h3>
 
@@ -143,19 +160,19 @@
             </h3>
         </div>
 
-        <div class="section">
+        <div class="section" id="mobile">
             <h2>Updated Mobile Design</h2>
             <div class = "prototype">
                 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkgP8qrMXCaJTeDFbuvJECi%2FGLANSIS-DECK%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D16-3086%26viewport%3D489%252C339%252C0.17%26t%3DvPbSJlHouhk2EvdV-1%26scaling%3Dscale-down%26mode%3Ddesign" allowfullscreen></iframe>            </div>
         </div>
 
-        <div class="section">
+        <div class="section" id="desktop">
             <h2>Desktop Design</h2>
             <div class = "prototype">
                 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkgP8qrMXCaJTeDFbuvJECi%2FGLANSIS-DECK%3Fpage-id%3D102%253A9324%26type%3Ddesign%26node-id%3D125-12521%26viewport%3D110%252C274%252C0.11%26t%3D0Spq1nXEJGAE3R4b-1%26scaling%3Dscale-down%26mode%3Ddesign" allowfullscreen></iframe>            </div>
         </div>
 
-        <div class="section">
+        <div class="section" id="decisions">
             <h2>Three Key Design Decisions</h2>
             
             <h3 class="sans">Eliminate Common Pitfalls of the List Generator Page:</h3>
