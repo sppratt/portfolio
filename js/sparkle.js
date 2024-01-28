@@ -1,4 +1,4 @@
-let color="darkorchid"; 
+let color="mediumslateblue"; 
 let sparkles=200;
 
 let x=ox=400;

@@ -23,9 +23,10 @@ main h2{
 }
 
 .section{
-    padding-bottom:25px;
-    padding-top: 25px;
+    padding-bottom:5px;
+    padding-top: 5px;
     border: 1px solid;
+    margin: 20px;
 }
 
 .prototype{
@@ -49,9 +50,10 @@ main h2{
         padding: 35px 75px;
     }
     .section{
-        padding-bottom:50px;
-        padding-top: 50px;
+        /* padding-bottom:10px;
+        padding-top: 10px; */
         border: 1px solid;
+        margin: 60px;
     }
     .sans{
         font-family: 'IBM Plex Sans', sans-serif;
