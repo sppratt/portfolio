@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index_style.css">
     <link rel="stylesheet" href="css/glansis_style.css">
     <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <div class="skip"><a href="">Skip to Main Content</a></div>
+        <!-- <div class="skip"><a href="">Skip to Main Content</a></div>
         <header>
             <h1 class="name">
                 <a href = "index.html">Sami Pratt</a>
@@ -28,13 +28,21 @@
                     
                 </ul>
             </nav>
-        </header>
+        </header> -->
     </header>
-    <hr>
     <main>
-        <h1 class = "title">NOAA GLANSIS Website Redesign</h1>
-
-        <nav>
+        <a class = "back" href = "index.html">back to home</a>
+        <h1 class="title">NOAA GLANSIS Website Redesign</h1>
+            <!-- <ul class="home-nav">  
+                <li><a href="#about" id="about-link" class="home-nav-link">about</a></li>
+                <li><a href="#projects" id="projects-link" class="home-nav-link">projects</a></li>
+                <li><a href="#resume" id="resume-link" class="home-nav-link">resume</a></li>
+                <li><a href="#contact" id="contact-link" class="home-nav-link">contact</a></li>
+            </ul> -->
+        </div>
+        <!-- <h1 class = "title">NOAA GLANSIS Website Redesign</h1> -->
+        
+        <div class = "nav">
             <ul>
                 <li><a href="#summary">Summary</a></li>
                 <li><a href="#process">Process</a></li>
@@ -49,32 +57,34 @@
                 <li><a href="#desktop">Desktop Design</a></li>
                 <li><a href="#decisions">Key Design Decisions</a></li>
             </ul>
-        </nav>
+        </div>
+        
+    
         <div class="section">
-            <h2>Client:</h2>
+            <h2>client:</h2>
             <h2 class="sans">National Oceanic and Atmospheric Administration (NOAA)</h2>
-            <h2>Duration:</h2>
+            <h2>duration:</h2>
             <h2 class="sans">August 2023-December 2023</h2>
-            <h2>Goal:</h2>
+            <h2>goal:</h2>
             <h2 class="sans">Redesign the Species List Generator tool on the Great Lakes Aquatic Nonindigenous Species Information System (GLANSIS) website</h2>
-            <h2>Tool:</h2>
+            <h2>tool:</h2>
             <h2 class="sans">Figma</h2>
-            <h2>Target Audiences:</h2>
+            <h2>target audiences:</h2>
             <h2 class="sans">Great Lakes Researchers, Natural Resouce Managers, AIS decision-makers, K-16 Educators</h2>
         </div>
 
         <div class="section" id="summary">
-            <h2>Executive Summary</h2>
+            <h2>executive summary</h2>
             <h2 class="sans">The GLANSIS Species List Generator uses filtering to create a list of invasive species within selected categories. My redesign of this tool addresses usability challenges by streamlining filters and navigation for resource managers, researchers, and the public. With simplified filters, clear icons, and more readable species profiles, the tool aims to facilitate users in efficiently managing invasive species in the Great Lakes and transform the user experience so that searching for a new species profile is easy, not frustrating.</h2>
         </div>
     
         <div class="section" id="process">
-            <h2>Design Process</h2>
+            <h2>design process</h2>
             <h2 class = "sans">1. Empathize<br>2. Define<br>3. Ideate<br>4. Prototype<br>5. Test<br>6. Assess</h2>
         </div>
         
         <div class="section" id="research">
-            <h2>User Research (obtained from Dr. Sturtevant at GLANSIS):</h2>
+            <h2>user research (obtained from Dr. Sturtevant at GLANSIS):</h2>
             <h3 class = "sans">Scenario 1: state/federal manager asked to approve permit to import species</h3>
             <ul class="needs" style="list-style: none;">
                 <li><h3 class = "sans">&#8226; goes to risk assessment clearinghouse</h3></li>
@@ -95,12 +105,12 @@
         </div>
 
         <div class="section" id = problem>
-            <h2>Problem Statement</h2>
+            <h2>problem statement</h2>
             <h2 class="sans">Thirty million people rely on the Great Lakes for water. GLANSIS recorded 180 invasive species that harm biodiversity, water quality, and the economy. North America loses $26 billion per year due to invasive species. They introduce toxins and inhibit nutrient flow in the food chain. Resource managers use the Species List Generator on GLANSIS’s website in search of species to control in their area. However, the species profiles are cluttered, inaccessible text walls of data needed to enact regulations.</h2>
         </div>
 
         <div class="section" id="approach">
-            <h2>Design Oriented Approach</h2>
+            <h2>design oriented approach</h2>
             <h3 class="sans">
                 <ul>
                 <!-- <ul class="bullet-list"> -->
@@ -119,25 +129,25 @@
         </div>    
         
         <div class="section" id="sketches">
-            <h2>Brainstorming Sketches</h2>
+            <h2>brainstorming sketches</h2>
             <img src="images/Sketches.png" alt="Skecthes of five pages of the GLANSIS site on mobile">
         </div>
 
         <div class="section" id="wireframes">
-            <h2>Wireframes</h2>
+            <h2>wireframes</h2>
             <div class = "prototype">
                 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FPtNwARq7SA1ARGQpqwCKoC%2FGLANSIS-Redesign%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-2%26viewport%3D381%252C356%252C0.2%26t%3DrCrxxeWpu46QcuIR-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2%26mode%3Ddesign" allowfullscreen></iframe>            </div>
             </div>
         </div>
 
         <div class="section" id="prototype">
-            <h2>Prototype</h2>
+            <h2>prototype</h2>
             <div class = "prototype">
                 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FPtNwARq7SA1ARGQpqwCKoC%2FGLANSIS-Redesign%3Fpage-id%3D210%253A406%26type%3Ddesign%26node-id%3D210-737%26viewport%3D860%252C402%252C0.2%26t%3DJZFkSdraAs24jd5Y-1%26scaling%3Dscale-down%26mode%3Ddesign" allowfullscreen></iframe>            </div>
         </div>
 
         <div class="section" id="testing">
-            <h2>Usability Testing</h2>
+            <h2>usability testing</h2>
             <h3 class="sans">Task 1: You are a fish expert searching for the fish of the Alosa genus, so you come to the GLANSIS site to search for that specific genus.</h3>
 
             <h3 class="sans">
@@ -161,19 +171,19 @@
         </div>
 
         <div class="section" id="mobile">
-            <h2>Updated Mobile Design</h2>
+            <h2>updated mobile design</h2>
             <div class = "prototype">
                 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkgP8qrMXCaJTeDFbuvJECi%2FGLANSIS-DECK%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D16-3086%26viewport%3D489%252C339%252C0.17%26t%3DvPbSJlHouhk2EvdV-1%26scaling%3Dscale-down%26mode%3Ddesign" allowfullscreen></iframe>            </div>
         </div>
 
         <div class="section" id="desktop">
-            <h2>Desktop Design</h2>
+            <h2>desktop design</h2>
             <div class = "prototype">
                 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkgP8qrMXCaJTeDFbuvJECi%2FGLANSIS-DECK%3Fpage-id%3D102%253A9324%26type%3Ddesign%26node-id%3D125-12521%26viewport%3D110%252C274%252C0.11%26t%3D0Spq1nXEJGAE3R4b-1%26scaling%3Dscale-down%26mode%3Ddesign" allowfullscreen></iframe>            </div>
         </div>
 
         <div class="section" id="decisions">
-            <h2>Three Key Design Decisions</h2>
+            <h2>three key design decisions</h2>
             
             <h3 class="sans">Eliminate Common Pitfalls of the List Generator Page:</h3>
 
@@ -203,7 +213,7 @@
         
         </main>
     <hr>
-    <footer>
+    <!-- <footer>
         <div class="left">
             <h3>⋆⁺₊⋆<button id="invert" class="button">invert colors</button>☾⋆⁺₊⋆<br>built from scratch with lots of love and coffee <3</h3>            
         </div>
@@ -212,6 +222,6 @@
             <h3>Let's connect! <a href=mailto:“sppratt@umich.edu” class="connect">sppratt@umich.edu</a> & <a href=https://www.linkedin.com/in/sami-pratt class="connect">LinkedIn</a></h3> 
         </div>
 
-    </footer>
+    </footer> -->
 </body>
 </html>
