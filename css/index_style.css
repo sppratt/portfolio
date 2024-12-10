@@ -24,5 +24,65 @@ html {
     left: auto;
 }
 
+.project-box {
+    width: 1312px;
+    height: 482px;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow effect */
+}
 
+/* Hover effect to increase the drop shadow */
+.project-box:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.35);
+}
 
+/* Specific positioning for images and text */
+.project-text {
+    position: absolute;
+    color: black;
+    font-family: IBM Plex Mono;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.project-text-small {
+    font-size: 20px;
+}
+
+.project-text-large {
+    font-size: 24px;
+}
+
+.project-text-medium {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Styling for "View case study" text */
+.view-case-study {
+    left: 732px;
+    top: 400px;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: IBM Plex Mono;
+    font-weight: 600;
+}
+
+.project-image {
+    position: absolute;
+}
+
+/* General clickable elements (links and buttons) */
+a, .chat-button {
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow effect */
+}
+
+/* Hover effect for all clickable elements (links, buttons, etc.) */
+a:hover, .chat-button:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35); /* Add shadow on hover */
+}
