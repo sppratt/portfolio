@@ -40,7 +40,9 @@ html {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.35);
 }
 
-/* Specific positioning for images and text */
+
+
+/* Specific positioning for images and text
 .project-text {
     position: absolute;
     color: black;
@@ -63,7 +65,7 @@ html {
 }
 
 /* Styling for "View case study" text */
-.view-case-study {
+/* .view-case-study {
     left: 732px;
     top: 400px;
     position: absolute;
@@ -71,7 +73,7 @@ html {
     font-size: 20px;
     font-family: IBM Plex Mono;
     font-weight: 600;
-}
+} */ */
 
 .project-image {
     position: absolute;
@@ -83,6 +85,6 @@ a, .chat-button {
 }
 
 /* Hover effect for all clickable elements (links, buttons, etc.) */
-a:hover, .chat-button:hover {
+a:hover, .chat-button:hover{
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35); /* Add shadow on hover */
 }
