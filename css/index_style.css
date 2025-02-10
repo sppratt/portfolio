@@ -88,3 +88,146 @@ a, .chat-button {
 a:hover, .chat-button:hover{
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35); /* Add shadow on hover */
 }
+
+container {
+    padding: 0 100px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: 100%;
+    position: relative;
+}
+
+
+
+.connect {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 48px;
+}
+
+.contact {
+    text-align: center;
+    font-size: 24px;
+    line-height: 31px;
+    font-family: IBM Plex Mono, monospace;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 32px 24px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 230.26px;
+    height: 100px;
+}
+
+.nav {
+    display: flex;
+    gap: 48px;
+}
+
+.nav-item {
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    line-height: 31px;
+    font-family: IBM Plex Mono, monospace;
+    text-decoration: underline;
+}
+
+.text {
+    color: black;
+    font-family: IBM Plex Mono, monospace;
+    word-wrap: break-word;
+}
+.title {
+    font-size: 48px;
+    line-height: 62px;
+    font-weight: 400;
+    position: absolute;
+    left: 100px;
+    top: 238px;
+}
+
+.subtitle {
+    font-size: 20px;
+    line-height: 26px;
+    font-style: italic;
+    text-decoration: underline;
+    position: absolute;
+    left: 100px;
+    top: 316px;
+    text-align: center;
+}
+
+.note {
+    font-size: 16px;
+    position: absolute;
+    left: 552px;
+    top: 300px;
+    text-align: right;
+}
+
+.glansis_logo {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    left: 991px;
+    top: 238px;
+}
+
+.info-box {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 84px;
+    top: 452px;
+    background: #E4D9FF;
+    border-radius: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.info-header {
+    padding: 0 111px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    line-height: 31px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.info-content {
+    padding: 0 80px 0 75px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 125px 143px 192px;
+    align-items: center;
+    font-size: 24px;
+    line-height: 31px;
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: 400;
+    color: black;
+    margin-top: 16px;
+}
+
+.info-detail {
+    text-align: center;
+}
