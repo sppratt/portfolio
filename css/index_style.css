@@ -191,10 +191,12 @@ container {
 }
 
 .info-box {
-    width: 100%;
+    width: auto;
+
     height: auto;
     position: absolute;
-    left: 84px;
+    left: 100px;
+    right: 100px;
     top: 452px;
     background: #E4D9FF;
     border-radius: 10px;
