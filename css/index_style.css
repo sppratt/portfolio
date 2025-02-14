@@ -126,7 +126,7 @@ container {
     align-items: center;
     background: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 32px 24px;
+    padding: 32px 100px;
     box-sizing: border-box;
 }
 
@@ -232,4 +232,38 @@ container {
 
 .info-detail {
     text-align: center;
+}
+
+.overview {
+    /* width: 100%;DiaMtaat22 */
+    /* width: 100%;DiaMtaat22Design a “Exclusive Discounts” page for a mobile app for Detroit tigers season ticket holders. This should display available discounts for a member of the “Tiger” status such as 10% off concessions and buy one get one free hats. I should also show that by reaching orange status, attending 3 more games, they could unlock 20% off all concessions.
+A navigation bar at the bottom should include tabs for home, vip status/badge (bragging rights page), tickets, and profile.
+
+ re  vv  */
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    top: 832px;
+}
+
+.section-title {
+    font-size: 32px;
+    line-height: 42px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 700;
+    color: black;
+}
+
+.section-text {
+    font-size: 24px;
+    line-height: 31px;
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: 400;
+    color: black;
+    margin-top: 16px;
+}
+
+.highlight {
+    color: #8566B6;
+    font-weight: 700;
 }
