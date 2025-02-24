@@ -16,7 +16,6 @@
 }
 
 .content {
-    padding: 0px 100px;
     display: grid;
     grid-template-columns: 1fr 24px 1fr 24px 1fr;
     /* grid-gap: 24px; */
@@ -67,28 +66,7 @@
     box-sizing: border-box;
 }
 
-.mono-24-bold{
-    font-size: 24px;
-    line-height: 31px;
-    font-family: IBM Plex Mono, monospace;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.75);
-}
 
-.mono-24{
-    font-size: 24px;
-    line-height: 31px;
-    font-family: IBM Plex Mono, monospace;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.75);
-}
-.mono-36{
-    font-size: 36px;
-    line-height: 47px;
-    font-family: IBM Plex Mono, monospace;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.75);
-}
 
 .info-header {
     display: flex;
@@ -97,14 +75,7 @@
     
 }
 
-.sans-24{
-    font-size: 24px;
-    line-height: 31px;
-    font-family: IBM Plex Sans, sans-serif;
-    font-weight: 400;
-    color: black;
-    margin: 0px;
-}
+
 
 .info-content {
     display: flex;
@@ -141,13 +112,7 @@
     padding: 48px; 
 }
 
-.mono-28-bold{
-    font-size: 28px;
-    line-height: 36px;
-    font-family: IBM Plex Mono, monospace;
-    font-weight: 700;
-    color: black;
-}
+
 
 .extra-grid{
     display: grid;

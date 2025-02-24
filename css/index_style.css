@@ -24,16 +24,6 @@ html {
     left: auto;
 }
 
-.project-box {
-    width: 1312px;
-    height: 482px;
-    position: absolute;
-    background: white;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow effect */
-}
 
 /* Hover effect to increase the drop shadow */
 .project-box:hover {
@@ -75,9 +65,9 @@ html {
     font-weight: 600;
 } */ */
 
-.project-image {
+/* .project-image {
     position: absolute;
-}
+} */
 
 /* General clickable elements (links and buttons) */
 a, .chat-button {
@@ -98,9 +88,60 @@ container {
 .content {
     max-width: 100%;
     position: relative;
+    margin: 0px 100px;
 }
 
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 100px;
+}
 
+.intro-text{
+    margin-top: 44px;
+}
+
+.intro-image img{
+    box-shadow: 4px 4px 20px rgba(133, 102, 182, 0.25); 
+    border-radius: 9999px;
+}
+
+.intro-title{
+    margin-bottom: 8px;
+}
+
+.intro-desc{
+    margin-bottom: 24px;
+}
+
+.mono-48-bold {
+    font-size: 48px;
+    line-height: 62px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 700;
+    color: black;
+}
+
+.sans-48 {
+    font-size: 48px;
+    line-height: 62px;
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+.chat-button{
+    background: #8566B6;
+    border-radius: 10px;
+    padding: 9.5px 38px;
+    color: white;
+    font-size: 24px;
+    line-height: 31px;
+    font-family: IBM Plex Sans, sans-serif;
+    text-decoration: none;
+}
 
 .connect {
     display: flex;
@@ -140,12 +181,18 @@ container {
     gap: 48px;
 }
 
+
+
 .nav-item {
     text-align: center;
     color: black;
     font-size: 24px;
     line-height: 31px;
     font-family: IBM Plex Mono, monospace;
+    text-decoration: none;
+}
+
+.current-nav{
     text-decoration: underline;
 }
 
@@ -177,12 +224,75 @@ container {
 }
 
 .glansis_logo {
-    width: 300px;
+    /* width: 300px;
     height: auto;
-    position: absolute;
-    left: 991px;
+    position: absolute; */
+    right: 100px;
     top: 238px;
 }
+
+.scroll {
+    display: flex;
+    align-items: center;
+    margin-bottom: 96px;
+    margin-top: 215px;
+}
+
+.scroll-text {
+    margin-right: 5px; /* Adjust spacing between text and icon if needed */
+}
+
+.arrow-icon {
+    width: 28px;
+    height: 28px;
+}
+
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 48px;
+}
+.project-box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-decoration: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 48px;
+}
+
+.project-image img{
+    grid-column: 1 / 2;
+    margin: 48px auto 48px 64px;
+    width: 100%;
+}
+
+.project-info{
+    grid-column: 2 / 3;
+    margin: 48px auto 48px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-type{
+    margin-bottom: 24px;
+}
+.project-title{
+    margin-bottom: 24px;
+}
+
+.view-case{
+    margin-bottom: 0px;
+    align-self: flex-start;
+}
+
 
 /* .info-box {
     width: auto;
@@ -253,6 +363,57 @@ container {
     font-family: IBM Plex Sans, sans-serif;
     font-weight: 400;
     color: black;
+}
+
+.mono-24{
+    font-size: 24px;
+    line-height: 31px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.sans-20{
+    font-size: 20px;
+    line-height: 26px;
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.75);
+}
+.mono-20{
+    font-size: 20px;
+    line-height: 26px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.mono-20-bold{
+    font-size: 20px;
+    line-height: 26px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+
+.mono-36{
+    font-size: 36px;
+    line-height: 47px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.75);
+}
+.mono-28-bold{
+    font-size: 28px;
+    line-height: 36px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 700;
+    color: black;
+}
+
+.italics {
+    font-style: italic;
 }
 
 .highlight {
