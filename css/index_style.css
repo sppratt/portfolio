@@ -254,23 +254,32 @@ container {
     row-gap: 48px;
 }
 .project-box{
+    height: 482px;
+    grid-column: 1 /2;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     text-decoration: none;
-    position: absolute;
+    /* position: absolute; */
     background: white;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     overflow: hidden;
     transition: box-shadow 0.3s ease-in-out;
-    margin-bottom: 48px;
+    box-sizing: border-box;
+    /* margin-bottom: 48px; */
 }
+.project-image{
+    margin-top: 48px;
+    margin-bottom: 48px;
 
-.project-image img{
-    grid-column: 1 / 2;
-    margin: 48px auto 48px 64px;
-    width: 100%;
+    margin-left: 48px;
+}
+.project-image img {
+    display: block;
+    max-width: 100%;
+    max-height: calc(100% - 96px);
 }
 
 .project-info{
@@ -285,6 +294,10 @@ container {
     margin-bottom: 24px;
 }
 .project-title{
+    margin-bottom: 24px;
+}
+
+.project-desc{
     margin-bottom: 24px;
 }
 
