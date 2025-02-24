@@ -154,31 +154,25 @@ container {
     font-family: IBM Plex Mono, monospace;
     word-wrap: break-word;
 }
-.title {
-    font-size: 48px;
-    line-height: 62px;
-    font-weight: 400;
-    position: absolute;
-    left: 100px;
-    top: 238px;
-}
+
 
 .subtitle {
+    padding-top: 16px;
     font-size: 20px;
     line-height: 26px;
     font-style: italic;
     text-decoration: underline;
     position: absolute;
-    left: 100px;
-    top: 316px;
+    
     text-align: center;
 }
 
 .note {
+    padding-left: 470px;
     font-size: 16px;
     position: absolute;
-    left: 552px;
-    top: 300px;
+    /* left: 552px;
+    top: 300px; */
     text-align: right;
 }
 
@@ -190,7 +184,7 @@ container {
     top: 238px;
 }
 
-.info-box {
+/* .info-box {
     width: auto;
 
     height: auto;
@@ -234,19 +228,10 @@ container {
     text-align: center;
 }
 
-.overview {
-    /* width: 100%;DiaMtaat22 */
-    /* width: 100%;DiaMtaat22Design a “Exclusive Discounts” page for a mobile app for Detroit tigers season ticket holders. This should display available discounts for a member of the “Tiger” status such as 10% off concessions and buy one get one free hats. I should also show that by reaching orange status, attending 3 more games, they could unlock 20% off all concessions.
-A navigation bar at the bottom should include tabs for home, vip status/badge (bragging rights page), tickets, and profile.
 
- re  vv  */
-    position: absolute;
-    left: 100px;
-    right: 100px;
-    top: 832px;
-}
+ */
 
-.section-title {
+.mono-32-bold {
     font-size: 32px;
     line-height: 42px;
     font-family: IBM Plex Mono, monospace;
@@ -254,13 +239,20 @@ A navigation bar at the bottom should include tabs for home, vip status/badge (b
     color: black;
 }
 
-.section-text {
+.mono-24-bold{
+    font-size: 24px;
+    line-height: 31px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.sans-24{
     font-size: 24px;
     line-height: 31px;
     font-family: IBM Plex Sans, sans-serif;
     font-weight: 400;
     color: black;
-    margin-top: 16px;
 }
 
 .highlight {

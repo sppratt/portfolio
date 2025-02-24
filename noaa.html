@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/noaa_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -63,20 +64,33 @@
         </div> -->
 
         <div class="container">
-            <div class="content">
+            <div class="header">
+                <div class="logo">
+                    <img src="images/Sami_Logo.png" alt="Sami Logo">
+                </div>
+                <div class="nav">
+                    <div class="nav-item">Work</div>
+                    <a href="about.html" class="nav-item">About</a>
+                    <a href="resume/Sami_Pratt_Resume.pdf" target="_blank" class="nav-item">Resume</a>
+                </div>
+            </div>
+            
+            <div class="project-header">
                 <div class="text title">NOAA GLANSIS Website Redesign</div>
                 <div class="underline text subtitle">Jump to final design</div>
                 <div class="text note">p.s. this was my first design project!</div>
                 <img class="glansis_logo" src="images/glansis_logo.png"/>
 
+            </div>
+            <div class="content">
                 <div class="info-box">
-                    <div class="info-header">
+                    <div class="info-header mono-24-bold">
                         <div class="info-item">ROLE</div>
                         <div class="info-item">CLIENT</div>
                         <div class="info-item">DURATION</div>
                         <div class="info-item">TOOLS</div>
                     </div>
-                    <div class="info-content">
+                    <div class="info-content sans-24">
                         <div class="info-detail">UX Designer,<br/>Solo Project</div>
                         <div class="info-detail">National Oceanic <br/>and Atmospheric Administration (NOAA)</div>
                         <div class="info-detail">August 2023 to<br/>December 2023</div>
@@ -97,201 +111,224 @@
                     <div style="width: 312px; left: 678.67px; top: 95px; position: absolute; text-align: center; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">August 2023 to<br/>December 2023</div>
                     <div style="width: 312px; left: 1025px; top: 95px; position: absolute; text-align: center; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Figma, Miro,<br/>Notability</div>
                 </div> -->
-                <div class="overview">
-                    <div class="section-title">Overview</div>
-                    <div class="section-text">The GLANSIS Species List Generator uses filtering to create a list of invasive species within selected categories. My redesign of this tool addresses usability challenges by </span><span class="highlight">streamlining filters</span><span> and </span><span class="highlight">navigation</span><span> for resource managers, researchers, and the public. With </span><span class="highlight">simplified filters</span><span>, </span><span class="highlight">clear icons</span><span>, and </span><span class="highlight">more readable</span><span> species profiles, the tool aims to facilitate users in </span><span class="highlight">efficiently managing</span><span> invasive species in the Great Lakes and transform the user experience so that </span><span class="highlight">searching for a new species profile is easy, not frustrating.</span></div>
+                
+                <div class="section-title mono-32-bold">Overview</div>
+                <div class="section-content sans-24">The GLANSIS Species List Generator uses filtering to create a list of invasive species within selected categories. My redesign of this tool addresses usability challenges by </span><span class="highlight">streamlining filters</span><span> and </span><span class="highlight">navigation</span><span> for resource managers, researchers, and the public. With </span><span class="highlight">simplified filters</span><span>, </span><span class="highlight">clear icons</span><span>, and </span><span class="highlight">more readable</span><span> species profiles, the tool aims to facilitate users in </span><span class="highlight">efficiently managing</span><span> invasive species in the Great Lakes and transform the user experience so that </span><span class="highlight">searching for a new species profile is easy, not frustrating.</span></div>
 
+
+                <div class="special-grid">
+                    <div class="box left">
+                        <div class="space-16 mono-32-bold">Goal</div>
+                        <div class="sans-24">Redesign the Species List Generator tool on the Great Lakes Aquatic Nonindigenous Species Information System (GLANSIS) website</div>
+                        <!-- <div style="width: 123px; left: 48px; top: 48px; position: absolute; color: black; font-size: 32px; line-height: 42px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Goal</div>
+                        <div style="width: 536px; left: 48px; top: 106px; position: absolute; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Redesign the Species List Generator tool on the Great Lakes Aquatic Nonindigenous Species Information System (GLANSIS) website</div>
+                     -->
+                    </div>
+    
+                    <div class="box right">
+                        <div class="space-16 mono-32-bold">Target Users</div>
+                        <div class="sans-24">Great Lakes Researchers, Natural Resouce Managers, AIS decision-makers, and K-16 Educators</div>
+                        <!-- <div style="width: 123px; left: 48px; top: 48px; position: absolute; color: black; font-size: 32px; line-height: 42px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Goal</div>
+                        <div style="width: 536px; left: 48px; top: 106px; position: absolute; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Redesign the Species List Generator tool on the Great Lakes Aquatic Nonindigenous Species Information System (GLANSIS) website</div>
+                     -->
+                    </div>
+                </div>
+                
+                <div class="section-title mono-32-bold">Design Process</div>
+
+                <div class="section-content">
+                    <img class="design-process" src="images/designprocess.png">
+                </div>
+
+                <div class="section-title mono-32-bold">User Needs & Scenarios</div>
+                <!-- <div style="width: 310px; left: 0px; top: 100px; position: absolute"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Informed by an interview with NOAA Representative </span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; text-decoration: underline; word-wrap: break-word">Dr. Rochelle Sturtevant</span></div> -->
+
+                <div class="section-content extra-grid">
+                    <div class="split-content left">
+                        <div class="box left">
+                            <div class="space-16 mono-24-bold">Scenario 1</div>
+                            <div class="sans-24">A local resource manager wants to know <span class="bold">what invasive species</span> are in their local management area that they <span class="bold">should control</span>.</div>
+                        </div>
+                        <div class="box left">
+                            <div class="space-16 mono-24-bold">Scenario 2</div>
+                            <div class="sans-24">A science teacher <span class="bold">needs a lesson </span>for their 8th grade students which is aligned to the next generation science standard on ecosystem. They would also like an <span class="bold">age-appropriate video </span>to accompany their lessons.</div>
+                        </div>
+                        <div class="blank left"></div>
+                    </div>
+                    
+                    <div class="split-content right">
+                        <div class="box right">
+                            <div class="space-16 mono-24-bold">Scenario 3</div>
+                            <div class="sans-24">A state/federal manager is asked to <span class="bold">approve a permit</span> to import species.</div>
+                        </div>
+                        <div class="box right">
+                            <div class="space-16 mono-24-bold">Scenario 4</div>
+                            <div class="sans-24">A researcher is planning a project to <span class="bold">test a hypothesis</span> about the food web of a particular habitat.</div>
+                        </div>
+                        <div class="box right">
+                            <div class="space-16 mono-24-bold">Scenario 5</div>
+                            <div class="sans-24">A 4th grade student has been assigned to <span class="bold">write a paper</span> on local invasive species.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function adjustBlankHeight() {
+                        const blank = document.querySelector('.blank');
+
+                        // Get left column inner elements
+                        const leftElements = document.querySelectorAll('.split-content.left .mono-24-bold, .split-content.left .sans-24');
+                        const rightBoxes = document.querySelectorAll('.split-content.right .box');
+
+                        // Helper function to calculate the total height including margins
+                        function getTotalHeight(elements) {
+                            return Array.from(elements).reduce((acc, el) => {
+                                const rect = el.getBoundingClientRect();
+                                const computedStyle = window.getComputedStyle(el);
+                                const marginTop = parseFloat(computedStyle.marginTop);
+                                const marginBottom = parseFloat(computedStyle.marginBottom);
+                                return acc + rect.height + marginTop + marginBottom;
+                            }, 0);
+                        }
+
+                        // Calculate left height (including 48px padding per .box)
+                        const leftHeight = getTotalHeight(leftElements) + (48 * 4);
+
+                        // Calculate right height
+                        const rightHeight = getTotalHeight(rightBoxes);
+
+                        // Update the blank height
+                        const difference = rightHeight - leftHeight;
+                        blank.style.height = difference > 0 ? `${difference}px` : '0px';
+                    }
+
+                    // Ensure the script runs on page load and window resize
+                    window.addEventListener('load', adjustBlankHeight);
+                    window.addEventListener('resize', adjustBlankHeight);
+                </script>
+
+                <div class="section-title mono-32-bold">The Problem</div>
+                <div class="section-content sans-24">Thirty million people rely on the Great Lakes for water. GLANSIS recorded 180 invasive species that harm <span class="highlight">biodiversity</span>, <span class="highlight">water quality</span>, and the <span class="highlight">economy</span>. North America loses $26 billion per year due to invasive species. They introduce <span class="highlight">toxins</span> and inhibit <span class="highlight">nutrient flow</span> in the food chain. Resource managers use the Species List Generator on GLANSIS's website in search of species to control in their area. However, the species profiles are <span class="highlight">cluttered, inaccessible text walls</span> of data needed to enact regulations.<br/></div>
+
+                <div class="section-title mono-32-bold">Why Waterfall for GLANSIS?</div>
+                <div class="section-content sans-24">
+                    The <span class="highlight">waterfall approach</span> is ideal for Dr. Rochelle Sturtevant's GLANSIS team due to its <span class="highlight">structured, systematic process</span>, which aligns well with <span class="highlight">scientific methodology</span>. Unlike agile, which requires a highly skilled, agile-literate team, or lean UX, which involves trial and error, the waterfall approach suits GLANSIS's <span class="highlight">detailed project requirements</span> and <span class="highlight">established goals</span>. Dr. Sturtevant's <span class="highlight">clarity on project scope</span> minimizes timeline risks, and the method's predefined steps, timelines, and budgets align with the team's <span class="highlight">management style and organizational culture</span>, ensuring a successful website redesign.
+                </div>
+
+
+                <div class="section-title mono-32-bold">Brainstorming Sketches</div>
+
+                <div class ="section-content extra-grid">
+                    <div class="left">
+                        <img src="images/sketch1.png"/>
+                    </div>
+                    <div class="right">
+                    </div>
+                    <div class="left">
+                        <img src="images/sketch2.png"/>
+                    </div>
+                    <div class="right">
+                        <img src="images/sketch3.png"/>
+                    </div>
+                </div>
+
+                <div class="section-title mono-32-bold">Wireframes</div>
+                <div class="section-content">
+                    <iframe class="figma" src="https://embed.figma.com/design/PtNwARq7SA1ARGQpqwCKoC/GLANSIS-Redesign?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+                </div>
+                
+                <div class="section-title mono-32-bold">First Mobile Prototype</div>
+                <div class="section-content">
+                    <iframe class="figma" src="https://embed.figma.com/design/PtNwARq7SA1ARGQpqwCKoC/GLANSIS-Redesign?node-id=210-406&embed-host=share" allowfullscreen></iframe>
+                </div>
+
+                <div class="full-width three-tiles">
+                    <div class="mono-32-bold">Usability Testing Insights</div>
+                    
+                    <div class="left outline-box">
+                        <div class="mono-28-bold">Task 1: Searching for the Alosa genus</div>
+                        <div class="sans-24"><span class="bold">Scenario:</span> A fish expert searches for fish of the Alosa genus.</div>
+                        <div class="sans-24"><span class="bold">Observations:</span>
+                        <br>Initially attempted to use the <span class="highlight">species list generator</span> instead of the <span class="highlight">quick species search</span>.
+                        <br>Quickly adjusted upon noticing the search icon. Successfully typed "Alo" and navigated results with ease.</div>
+                    </div>
+                    <div class="right outline-box">
+                        <div class="mono-28-bold">Task 2: Finding the number of nonindigenous fish</div>
+                        <div class="sans-24"><span class="bold">Scenario:</span> A student studying invasive species looks for the total recorded nonindigenous fish.</div>
+                        <div class="sans-24"><span class="bold">Observations:</span>
+                        <br>Found the <span class="highlight">species list generator</span> quickly.
+                        <br>Noticed <span class="highlight">default setting</span> for nonindigenous species.
+                        <br>Located the <span class="highlight">submit button</span> without confusion.
+                        <br>Took a few seconds to confirm <span class="highlight">30 species</span> recorded—successfully completed the task.</div>
+                    </div>
+                    <div class="three-right outline-box">
+                        <div class="mono-28-bold">Task 3: Exploring navigation options</div>
+                        <div class="sans-24"><span class="bold">Scenario:</span> A first-time user explores the site beyond the species list generator.</div>
+                        <div class="sans-24"><span class="bold">Observations:</span>
+                        <br>Quickly identified and used the <span class="highlight">hamburger menu</span> to access other tools.
+                        <br>Did not attempt to return to the homepage, suggesting the menu effectively conveyed navigation.</div>
+                    </div>
                     
                 </div>
-                <div style="width: 1312px; height: 247px; left: 100px; top: 1193px; position: absolute">
-                    <div style="width: 632px; height: 247px; left: 0px; top: 0px; position: absolute; background: #E4D9FF; border-radius: 10px"></div>
-                    <div style="width: 632px; height: 247px; left: 680px; top: 0px; position: absolute; background: #E4D9FF; border-radius: 10px"></div>
-                    <div style="width: 536px; left: 48px; top: 106px; position: absolute; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Redesign the Species List Generator tool on the Great Lakes Aquatic Nonindigenous Species Information System (GLANSIS) website</div>
-                    <div style="width: 123px; left: 48px; top: 48px; position: absolute; color: black; font-size: 32px; line-height: 42px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Goal</div>
-                    <div style="width: 281px; left: 728px; top: 48px; position: absolute; color: black; font-size: 32px; line-height: 42px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Target Users</div>
-                    <div style="width: 536px; left: 728px; top: 106px; position: absolute; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Great Lakes Researchers, Natural Resouce Managers, AIS decision-makers, and K-16 Educators</div>
+
+                
+
+                <div class="section-title mono-32-bold">Updated Mobile Prototype</div>
+                <div class="section-content">
+                    <iframe class="figma" src="https://embed.figma.com/design/kgP8qrMXCaJTeDFbuvJECi/GLANSIS-DECK?node-id=0-1&embed-host=share" allowfullscreen></iframe>
                 </div>
-                <div style="width: 1322px; height: 492px; left: 100px; top: 1584px; position: absolute">
-                    <div style="width: 421px; left: 0px; top: 0px; position: absolute; color: black; font-size: 32px; line-height: 42px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Design Process</div>
-                    <div style="width: 867.37px; height: 222px; left: 445px; top: 0px; position: absolute; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
-                        <div style="width: 221.12px; height: 221.12px; position: relative">
-                            <div style="width: 221.12px; height: 221.12px; left: 0px; top: 0px; position: absolute; background: #E4D9FF; border-radius: 9999px"></div>
-                            <div style="width: 160px; height: 108px; left: 31px; top: 47px; position: absolute">
-                                <div style="width: 160px; height: 36px; left: 0px; top: 72px; position: absolute; text-align: center; color: black; font-size: 28px; line-height: 36px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">Empathize</div>
-                                <div style="width: 64px; height: 64px; left: 48px; top: 0px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                                    <!-- add icon -->
-                                </div>
-                            </div>
-                        </div>
-                        <div style="width: 48px; height: 0px; border: 2px black solid"></div>
-                        <div style="width: 221.12px; height: 221.12px; position: relative">
-                            <div style="width: 221.12px; height: 221.12px; left: 0px; top: 0px; position: absolute; background: #E4D9FF; border-radius: 9999px"></div>
-                            <div style="width: 143px; height: 36px; left: 39.06px; top: 119px; position: absolute; text-align: center; color: black; font-size: 28px; line-height: 36px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">Define</div>
-                            <div style="width: 64px; height: 64px; left: 79.06px; top: 47px; position: absolute">
-                                <!-- add icon -->
-                            </div>
-                        </div>
-                        <div style="width: 48px; height: 0px; border: 2px black solid"></div>
-                        <div style="width: 221.12px; height: 221.12px; position: relative">
-                            <div style="width: 221.12px; height: 221.12px; left: 0px; top: 0px; position: absolute; background: #E4D9FF; border-radius: 9999px"></div>
-                            <div style="width: 143px; height: 36px; left: 39.12px; top: 119px; position: absolute; text-align: center; color: black; font-size: 28px; line-height: 36px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">Ideate</div>
-                            <div style="width: 64px; height: 64px; left: 78.12px; top: 47px; position: absolute">
-                                <div style="width: 52px; height: 60.14px; left: 6px; top: 2px; position: absolute">
-                                    <!-- add icon -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="width: 192px; height: 40.50px; left: 1322px; top: 150px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 2px black solid"></div>
-                    <div style="width: 867.37px; height: 222px; left: 445px; top: 270px; position: absolute; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
-                        <div style="width: 221.12px; height: 221.12px; position: relative">
-                            <div style="width: 221.12px; height: 221.12px; left: 0px; top: 0px; position: absolute; background: #E4D9FF; border-radius: 9999px"></div>
-                            <div style="width: 143px; height: 36px; left: 39.12px; top: 119px; position: absolute; text-align: center; color: black; font-size: 28px; line-height: 36px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">Assess</div>
-                            <div style="width: 64px; height: 64px; left: 78.12px; top: 52px; position: absolute">
-                                <!-- add icon -->
-                            </div>
-                        </div>
-                        <div style="width: 48px; height: 0px; transform: rotate(-180deg); transform-origin: 0 0; border: 2px black solid"></div>
-                        <div style="width: 221.12px; height: 221.12px; position: relative">
-                            <div style="width: 221.12px; height: 221.12px; left: 0px; top: 0px; position: absolute; background: #E4D9FF; border-radius: 9999px"></div>
-                            <div style="width: 143px; height: 36px; left: 39.06px; top: 119px; position: absolute; text-align: center; color: black; font-size: 28px; line-height: 36px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">Test</div>
-                            <div style="width: 64px; height: 64px; left: 78.06px; top: 47px; position: absolute">
-                                <!-- add icon -->
-                            </div>
-                        </div>
-                        <div style="width: 48px; height: 0px; transform: rotate(-180deg); transform-origin: 0 0; border: 2px black solid"></div>
-                        <div style="width: 221.12px; height: 221.12px; position: relative">
-                            <div style="width: 221.12px; height: 221.12px; left: 0px; top: 0px; position: absolute; background: #E4D9FF; border-radius: 9999px"></div>
-                            <div style="width: 160px; height: 36px; left: 31px; top: 119px; position: absolute; text-align: center; color: black; font-size: 28px; line-height: 36px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">Prototype</div>
-                            <div style="width: 64px; height: 64px; left: 79px; top: 47px; position: absolute">
-                                <!-- add icon -->
-                            </div>
-                        </div>
-                    </div>
+
+                <div class="section-title mono-32-bold">Final Desktop Design</div>
+                <div class="section-content">
+                    <iframe class="figma" src="https://embed.figma.com/design/kgP8qrMXCaJTeDFbuvJECi/GLANSIS-DECK?node-id=102-9324&embed-host=share" allowfullscreen></iframe>
                 </div>
-                <div style="width: 1313px; height: 787px; left: 100px; top: 2220px; position: absolute">
-                    <div style="width: 421px; left: 0px; top: 0px; position: absolute; color: black; font-size: 32px; line-height: 42px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">User Needs & Scenarios</div>
-                    <div style="width: 422px; height: 298px; left: 445px; top: 0px; position: absolute">
-                        <div style="width: 422px; height: 298px; left: 0px; top: 0px; position: absolute; background: #E4D9FF; border-radius: 10px"></div>
-                        <div style="width: 174.12px; left: 48px; top: 48px; position: absolute; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Scenario 1</div>
-                        <div style="width: 326px; left: 48px; top: 95px; position: absolute"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">A local resource manager wants to know </span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">what invasive species</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> are in their local management area that they </span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">should control</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">.</span></div>
+               
+                <div class="full-width three-tiles">
+                    <div class="mono-32-bold">Design Iterations & Key Decisions</div>
+                    
+                    <div class="left outline-box">
+                        <div class="mono-28-bold">1. Eliminating Common Pitfalls on the List Generator Page</div>
+                        <div class="sans-24"><span class="bold">Problem:</span> The List Generator Page has too many options, causing confusion.</div>
+                        <div class="sans-24"><span class="bold">Solution:</span>
+                        <br>Prioritized the <span class="highlight">two most commonly used filters</span>:
+                        <span class="highlight">Species Category</span>
+                        <span class="highlight">Lake (HUC)</span>
+                        <br>Moved less-used filters (e.g., "Group" and "Status") into <span class="highlight">Advanced Search</span> to prevent misuse.
+                        <br>Added <span class="highlight">information icons</span> next to filters to clarify terminology and provide help.</div>
                     </div>
-                    <div style="width: 422px; height: 236px; left: 891px; top: 0px; position: absolute">
-                        <div style="width: 422px; height: 236px; left: 0px; top: 0px; position: absolute; background: #E4D9FF; border-radius: 10px"></div>
-                        <div style="width: 174.12px; left: 48px; top: 48px; position: absolute; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Scenario 3</div>
-                        <div style="width: 326px; left: 48px; top: 95px; position: absolute"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">A state/federal manager is asked to </span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">approve a permit</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> to import species.</span></div>
+                    <div class="right outline-box">
+                        <div class="mono-28-bold">2. Improving Access to Important Information</div>
+                        <div class="sans-24"><span class="bold">User Needs:</span>
+                        <br>Some users <span class="highlight">only need the number of results</span>.
+                        <br>Others need <span class="highlight">the newest additions to the database</span>.
+                        <br><span class="bold">Changes:</span>
+                        <br>Displayed the total number of results in the <span class="highlight">top left corner</span> for easy access.
+                        <br>Removed sort options from the List</div>   
                     </div>
-                    <div style="width: 422px; height: 267px; left: 891px; top: 260px; position: absolute">
-                        <div style="width: 422px; height: 267px; left: 0px; top: 0px; position: absolute; background: #E4D9FF; border-radius: 10px"></div>
-                        <div style="width: 174.12px; left: 48px; top: 48px; position: absolute; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Scenario 4</div>
-                        <div style="width: 326px; left: 48px; top: 95px; position: absolute"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">A researcher is planning a project to </span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">test a hypothesis</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> about the food web of a particular habitat.</span></div>
-                    </div>
-                    <div style="width: 422px; height: 236px; left: 891px; top: 551px; position: absolute">
-                        <div style="width: 422px; height: 236px; left: 0px; top: 0px; position: absolute; background: #E4D9FF; border-radius: 10px"></div>
-                        <div style="width: 174.12px; left: 48px; top: 48px; position: absolute; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Scenario 5</div>
-                        <div style="width: 326px; left: 48px; top: 95px; position: absolute"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">A 4th grade student has been assigned to </span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">write a paper</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> on local invasive species.</span></div>
-                    </div>
-                    <div style="width: 422px; height: 391px; left: 445px; top: 322px; position: absolute">
-                        <div style="width: 422px; height: 391px; left: 0px; top: 0px; position: absolute; background: #E4D9FF; border-radius: 10px"></div>
-                        <div style="width: 174.12px; left: 48px; top: 48px; position: absolute; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Scenario 2</div>
-                        <div style="width: 326px; left: 48px; top: 95px; position: absolute"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">A science teacher </span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">needs a lesson </span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">for their 8th grade students which is aligned to the next generation science standard on ecosystem. They would also like an </span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">age-appropriate video </span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">to accompany their lessons.</span></div>
-                    </div>
-                    <div style="width: 310px; left: 0px; top: 100px; position: absolute"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Informed by an interview with NOAA Representative </span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; text-decoration: underline; word-wrap: break-word">Dr. Rochelle Sturtevant</span></div>
-                </div>
-                <div style="width: 1312px; left: 100px; top: 3151px; position: absolute">
-                    <div style="width: 867px; height: 217px; left: 445px; top: 0px; position: absolute"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Thirty million people rely on the Great Lakes for water. GLANSIS recorded 180 invasive species that harm </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">biodiversity</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">, </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">water quality</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">, and the </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">economy</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">. North America loses $26 billion per year due to invasive species. They introduce </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">toxins</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> and inhibit </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">nutrient flow</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> in the food chain. Resource managers use the Species List Generator on GLANSIS’s website in search of species to control in their area. However, the species profiles are </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">cluttered, inaccessible text walls</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> of data needed to enact regulations.<br/></span></div>
-                    <div style="width: 421px; left: 0px; top: 0px; position: absolute; color: black; font-size: 32px; line-height: 42px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">The Problem</div>
-                </div>
-                <div style="width: 1312px; left: 100px; top: 3512px; position: absolute">
-                    <div style="width: 867px; height: 248px; left: 445px; top: 0px; position: absolute"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">The </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">waterfall approach</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> is ideal for Dr. Rochelle Sturtevant’s GLANSIS team due to its </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">structured, systematic process</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">, which aligns well with </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">scientific methodology</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">. Unlike agile, which requires a highly skilled, agile-literate team, or lean UX, which involves trial and error, the waterfall approach suits GLANSIS’s </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">detailed project requirements </span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">and</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word"> </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">established goals</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">. Dr. Sturtevant’s </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">clarity on project scope</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> minimizes timeline risks, and the method’s predefined steps, timelines, and budgets align with the team’s</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word"> </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">management style and organizational culture</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">, ensuring a successful website redesign.</span></div>
-                    <div style="width: 421px; left: 0px; top: 0px; position: absolute; color: black; font-size: 32px; line-height: 42px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Why Waterfall for GLANSIS?</div>
-                </div>
-                <div style="width: 1312.21px; left: 100px; top: 3904px; position: absolute">
-                    <div style="width: 421px; left: 0px; top: 0px; position: absolute; color: black; font-size: 32px; line-height: 42px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Brainstorming Sketches</div>
-                    <div style="width: 867.21px; height: 811px; left: 445px; top: 0px; position: absolute">
-                        <img style="width: 527.67px; height: 394.60px; left: 0px; top: 0px; position: absolute" src="images/sketch1.png" />
-                        <img style="width: 527.67px; height: 388.87px; left: 0px; top: 422.13px; position: absolute" src="images/sketch2.png" />
-                        <img style="width: 285.63px; height: 388.87px; left: 581.58px; top: 211.07px; position: absolute" src="images/sketch3.png" />
-                    </div>
-                </div>
-                <div style="width: 1245px; left: 100px; top: 4859px; position: absolute">
-                    <div style="width: 421px; left: 0px; top: 0px; position: absolute; color: black; font-size: 32px; line-height: 42px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Wireframes</div>
-                    <div style="width: 800px; height: 450px; left: 445px; top: 0px; position: absolute; background: #E4D9FF">
-                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/PtNwARq7SA1ARGQpqwCKoC/GLANSIS-Redesign?node-id=0-1&embed-host=share" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div style="width: 1245px; left: 100px; top: 5453px; position: absolute">
-                    <div style="width: 421px; left: 0px; top: 0px; position: absolute; color: black; font-size: 32px; line-height: 42px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">First Mobile Prototype</div>
-                    <div style="width: 800px; height: 450px; left: 445px; top: 0px; position: absolute; background: #E4D9FF">
-                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/PtNwARq7SA1ARGQpqwCKoC/GLANSIS-Redesign?node-id=210-406&embed-host=share" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div style="width: 1312px; height: 767px; left: 100px; top: 6047px; position: absolute">
-                    <div style="width: 630px; left: 0px; top: 0px; position: absolute; color: black; font-size: 32px; line-height: 42px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Usability Testing Insights</div>
-                    <div style="width: 421px; height: 603px; left: 891px; top: 66px; position: absolute">
-                        <div style="width: 421px; height: 603px; left: 0px; top: 0px; position: absolute; border-radius: 10px; border: 2px #E4D9FF solid"></div>
-                        <div style="width: 325.23px; left: 47.89px; top: 48px; position: absolute; color: black; font-size: 28px; line-height: 36px;
-                            font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Task 3: Exploring navigation options</div>
-                        <div style="width: 325.23px; left: 47.89px; top: 136px; position: absolute"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Scenario:</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> A first-time user explores the site beyond the species list generator.<br/></span><span style="color: black; font-size: 16px; font-family: IBM Plex Sans; font-weight: 400; line-height: 16px; word-wrap: break-word"><br/></span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Observations:<br/></span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Quickly identified and used the </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">hamburger menu</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> to access other tools.<br/>Did not attempt to return to the homepage, suggesting the menu effectively conveyed navigation.</span></div>
-                    </div>
-                    <div style="width: 422px; height: 701px; left: 445px; top: 66px; position: absolute">
-                        <div style="width: 422px; height: 701px; left: 0px; top: 0px; position: absolute; border-radius: 10px; border: 2px #E4D9FF solid"></div>
-                        <div style="width: 326px; left: 48px; top: 48px; position: absolute; color: black; font-size: 28px; line-height: 36px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Task 2: Finding the number of nonindigenous fish</div>
-                        <div style="width: 326px; left: 48px; top: 172px; position: absolute"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Scenario:</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> A student studying invasive species looks for the total recorded nonindigenous fish.<br/></span><span style="color: black; font-size: 16px; font-family: IBM Plex Sans; font-weight: 400; line-height: 16px; word-wrap: break-word"><br/></span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Observations:<br/></span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Found the </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">species list generator</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> quickly.<br/>Noticed </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">default setting</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> for nonindigenous species.<br/>Located the </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">submit button</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> without confusion.<br/>Took a few seconds to confirm </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">30 species</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word"> </span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">recorded—successfully completed the task.</span></div>
-                    </div>
-                    <div style="width: 421px; height: 603px; left: 0px; top: 66px; position: absolute">
-                        <div style="width: 421px; height: 603px; left: 0px; top: 0px; position: absolute; border-radius: 10px; border: 2px #E4D9FF solid"></div>
-                        <div style="width: 325.23px; left: 47.89px; top: 48px; position: absolute; color: black; font-size: 28px; line-height: 36px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Task 1: Searching for the Alosa genus</div>
-                        <div style="width: 325.23px; left: 47.89px; top: 136px; position: absolute"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Scenario:</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> A fish expert searches for fish of the Alosa genus.<br/></span><span style="color: black; font-size: 16px; font-family: IBM Plex Sans; font-weight: 400; line-height: 16px; word-wrap: break-word"><br/></span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Observations:<br/></span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Initially attempted to use the </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">species list generator</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> instead of the </span><span style="color: #8566B6; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">quick species search</span><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">.<br/>Quickly adjusted upon noticing the search icon.<br/>Successfully typed "Alo" and navigated results with ease.</span></div>
-                    </div>
-                </div>
-                <div style="width: 1245px; left: 100px; top: 6958px; position: absolute">
-                    <div style="width: 421px; left: 0px; top: 0px; position: absolute; color: black; font-size: 32px; line-height: 42px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Updated Mobile Prototype</div>
-                    <div style="width: 800px; height: 450px; left: 445px; top: 0px; position: absolute; background: #E4D9FF">
-                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/kgP8qrMXCaJTeDFbuvJECi/GLANSIS-DECK?node-id=0-1&embed-host=share" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div style="width: 1245px; left: 100px; top: 7552px; position: absolute">
-                    <div style="width: 392px; left: 0px; top: 0px; position: absolute; color: black; font-size: 32px; line-height: 42px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Final Desktop Design</div>
-                    <div style="width: 800px; height: 450px; left: 445px; top: 0px; position: absolute; background: #E4D9FF">
-                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/kgP8qrMXCaJTeDFbuvJECi/GLANSIS-DECK?node-id=102-9324&embed-host=share" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div style="width: 1312px; height: 1108px; left: 100px; top: 8146px; position: absolute">
-                    <div style="width: 668px; height: 42px; left: 0px; top: 0px; position: absolute; color: black; font-size: 32px; line-height: 42px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Design Iterations & Key Decisions</div>
-                    <div style="width: 421px; height: 882px; left: 891px; top: 66px; position: absolute; border-radius: 10px; border: 2px #E4D9FF solid"></div>
-                    <div style="width: 325.23px; left: 938.89px; top: 114px; position: absolute; color: black; font-size: 28px; line-height: 36px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">3. Enhancing Navigation & Search</div>
-                    <div style="width: 325.23px; left: 938.89px; top: 202px; position: absolute"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Challenge:</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> The GLANSIS database is extensive, so navigation must be </span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">fast and intuitive</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">.<br/></span><span style="color: black; font-size: 16px; font-family: IBM Plex Sans; font-weight: 400; line-height: 16px; word-wrap: break-word"><br/></span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Solutions:<br/></span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Added</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word"> </span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">key tools</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> to both the</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word"> </span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">header and hamburger menu</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> for quick access.<br/>Enabled </span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">search from anywhere</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> on the site.<br/>Implemented:<br/></span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Auto-suggest for recently searched species</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">.<br/></span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Predictive text to complete species names quickly</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">.<br/></span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Following </span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Fitts’s Law</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">: Placed key navigation elements at the top for faster interaction.</span></div>
-                    <div style="width: 422px; height: 1042px; left: 445px; top: 66px; position: absolute; border-radius: 10px; border: 2px #E4D9FF solid"></div>
-                    <div style="width: 326px; left: 493px; top: 116px; position: absolute; color: black; font-size: 28px; line-height: 36px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">2. Improving Access to Important Information</div>
-                    <div style="width: 326px; left: 493px; top: 240px; position: absolute"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">User Needs:<br/></span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Some users </span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">only need the number of results</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">.<br/>Others need </span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">the newest additions to the database</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">.<br/></span><span style="color: black; font-size: 16px; font-family: IBM Plex Sans; font-weight: 700; line-height: 16px; word-wrap: break-word"><br/></span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Changes:<br/></span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Displayed the total number of results</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> in the </span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">top left corner</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> for easy access.<br/></span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Removed sort options</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> from the List Generator Page to </span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">reduce clutter</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">.<br/></span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Defaulted sorting to newest-to-oldest</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> on the List Page for quick access to recent data.<br/></span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Kept additional sorting/filtering options</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> on the List Page for further refinement.<br/></span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Reduced cognitive load</span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> </span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">by ensuring the most relevant info is visible at a glance.</span></div>
-                    <div style="width: 421px; height: 768px; left: 0px; top: 66px; position: absolute; border-radius: 10px; border: 2px #E4D9FF solid"></div>
-                    <div style="width: 325.23px; left: 47.89px; top: 116px; position: absolute; color: black; font-size: 28px; line-height: 36px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">1. Eliminating Common Pitfalls on the List Generator Page</div>
-                    <div style="width: 325.23px; left: 47.89px; top: 276px; position: absolute"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Problem:</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> The List Generator Page has too many options, causing confusion.<br/></span><span style="color: black; font-size: 16px; font-family: IBM Plex Sans; font-weight: 400; line-height: 16px; word-wrap: break-word"><br/></span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Solution:<br/></span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Prioritized the </span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">two most commonly used filters</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">:<br/></span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Species Category<br/>Lake (HUC)<br/></span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word">Moved less-used filters (e.g., "Group" and "Status") into </span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">Advanced Search</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> to prevent misuse.<br/>Added </span><span style="color: #8566B6; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 700; word-wrap: break-word">information icons</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Sans; font-weight: 400; word-wrap: break-word"> next to filters to clarify terminology and provide help.</span></div>
+                    <div class="three-right outline-box">
+                        <div class="mono-28-bold">3. Enhancing Navigation & Search</div>
+                        <div class="sans-24"><span class="bold">Challenge:</span> The GLANSIS database is extensive, so navigation must be <span class="highlight">fast and intuitive</span>.</div>
+                        <div class="sans-24"><span class="bold">Solutions:</span>
+                        <br>Added <span class="highlight">key tools</span> to both the <span class="highlight">header and hamburger menu</span> for quick access.
+                        <br>Enabled <span class="highlight">search from anywhere</span> on the site.
+                        <br>Implemented:
+                        <br>Auto-suggest for recently searched species.
+                        <br>Predictive text to complete species names quickly.
+                        <br>Following <span class="highlight">Fitts's Law</span>: Placed key navigation elements at the top for faster interaction.</div>
+                    </div> 
                 </div>
             </div>
 
             <div class="connect">
-                <div style="width: 1313px; left: 100px; top: 9398px; position: absolute; justify-content: flex-start; align-items: center; gap: 48px; display: inline-flex">
-                    <!-- <div style="width: 303px; height: 45px; color: black; font-size: 36px; line-height: 47px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">Let’s connect!</div> -->
-                    <div class="title">Let's connect!</div>
-                    <!-- <div style="width: 403px; height: 45px; text-align: center"><span style="color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Mono; font-weight: 400; text-decoration: underline; word-wrap: break-word">sppratt@umich.edu</span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word"> & </span><span style="color: black; font-size: 24px; line-height: 31px;font-family: IBM Plex Mono; font-weight: 400; text-decoration: underline; word-wrap: break-word">LinkedIn</span></div> -->
-                    <div class="contact">
+                    <div class="title mono-36">Let's connect!</div>
+                    
+                    <div class="contact mono-24">
                         <span class="underline">sppratt@umich.edu</span> & <span class="underline">LinkedIn</span>
                     </div>
                 </div>
             </div>
 
-            <div class="header">
-                <div class="logo">
-                    <img src="images/Sami_Logo.png" alt="Sami Logo">
-                </div>
-                <div class="nav">
-                    <div class="nav-item">Work</div>
-                    <a href="about.html" class="nav-item">About</a>
-                    <a href="resume/Sami_Pratt_Resume.pdf" target="_blank" class="nav-item">Resume</a>
-                </div>
-            </div>
+            
             <!-- <div class="header">
                 <div style="width: 1512px; height: 164px; padding-top: 32px; padding-bottom: 32px; padding-left: 100px; padding-right: 1181.74px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); justify-content: flex-start; align-items: center; display: inline-flex; box-sizing: border-box">
                     <img style="width: 230.26px; height: 100px" src="images/Sami_Logo.png">

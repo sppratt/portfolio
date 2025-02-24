@@ -1,0 +1,209 @@
+.container {
+    padding: 0px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.project-header{
+    margin: 74px 100px 96px;
+    /* margin-top: 74px;
+    margin-bottom: 96px; */
+}
+
+
+.connect{
+    padding: 144px 100px;
+}
+
+.content {
+    padding: 0px 100px;
+    display: grid;
+    grid-template-columns: 1fr 24px 1fr 24px 1fr;
+    /* grid-gap: 24px; */
+    row-gap: 144px;
+    position: relative;
+}
+
+.text {
+    color: black;
+    font-family: IBM Plex Mono, monospace;
+    word-wrap: break-word;
+}
+
+.title {
+    font-size: 48px;
+    line-height: 62px;
+    font-weight: 400;
+    /* grid-column: 1 / -1; */
+}
+
+.subtitle {
+    font-size: 20px;
+    line-height: 26px;
+    font-style: italic;
+    text-decoration: underline;
+    /* grid-column: 1 / -1; */
+    text-align: center;
+}
+
+.note {
+    font-size: 16px;
+    /* grid-column: 1 / -1; */
+    text-align: right;
+}
+
+.glansis_logo {
+    /* width: 100%; */
+    width: 300px;
+    height: auto;
+    /* grid-column: 1 / -1; */
+}
+
+.info-box {
+    grid-column: 1 / 6;
+    background: #E4D9FF;
+    border-radius: 10px;
+    padding: 48px;
+    box-sizing: border-box;
+}
+
+.mono-24-bold{
+    font-size: 24px;
+    line-height: 31px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.mono-24{
+    font-size: 24px;
+    line-height: 31px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.75);
+}
+.mono-36{
+    font-size: 36px;
+    line-height: 47px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.sans-24{
+    font-size: 24px;
+    line-height: 31px;
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: 400;
+    color: black;
+    margin: 0px;
+}
+
+.info-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.info-detail {
+    text-align: center;
+}
+
+.section-title{
+    grid-column: 1 / 2;
+}
+
+.full-width{
+    grid-column: 1 / -1;
+}
+
+.three-tiles{
+    display:grid;
+    grid-template-columns: 1fr 24px 1fr 24px 1fr;
+    row-gap: 24px;
+}
+
+.three-right{
+    grid-column: 5 / span 1;
+}
+
+.outline-box{
+    border: 1px solid #E4D9FF;
+    border-radius: 10px;
+    padding: 48px; 
+}
+
+.mono-28-bold{
+    font-size: 28px;
+    line-height: 36px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 700;
+    color: black;
+}
+
+.extra-grid{
+    display: grid;
+    grid-template-columns: 1fr 24px 1fr;
+}
+.section-content{
+    /* margin-top: 16px; */
+    grid-column: 3 / -1;
+}
+
+.split-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+}
+
+.design-process{
+    width: 100%;
+}
+
+
+.special-grid{
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 24px 1fr;
+}
+
+.box{
+    background: #E4D9FF;
+    border-radius: 10px;
+    padding: 48px;
+
+}
+
+.left{
+    grid-column: 1 / span 1; /* Spans first to the middle column */
+
+}
+  
+  /* Right item spans from after the middle to the end */
+.right{
+    grid-column: 3 / span 1; /* Spans middle to the last column */
+
+}
+
+.space-16{
+    margin-bottom: 16px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+
+.figma{
+    width: 800px; 
+    height: 450px; 
+    background: #E4D9FF
+}
