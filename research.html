@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/html5reset.css">
-    <link rel="stylesheet" href="css/index_style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="js/sparkle.js"></script>
-    <script type="text/javascript" src="js/invert-i.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/html5reset.css">
+        <link rel="stylesheet" href="css/index_style.css">
+        <link rel="stylesheet" href="css/research_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="js/sparkle.js"></script>
+        <script type="text/javascript" src="js/invert-i.js"></script>
 
-    <title>UMSI Research</title>
-</head>
-<body>
-    <div style="width: 100%; height: 100%; position: relative; background: white;">
-        <!-- Background Image, set to be behind the text -->
-        <img style="position: absolute; top: 164px; left: 0; width: 100%; z-index: -1;" src="images/background.png" />
-
-        <!-- Text Content -->
-        <div style="width: 427px; height: 94px; left: 991px; top: 744px; position: absolute; text-align: right;">
-            <span style="color: black; font-size: 36px; line-height: 47px; font-family: IBM Plex Mono; font-style: italic; font-weight: 400; word-wrap: break-word">For now, check out </span>
-            <span style="color: black; font-size: 36px; line-height: 47px; font-family: IBM Plex Mono; font-style: italic; font-weight: 400; text-decoration: underline; word-wrap: break-word">our paper</span>
-            <span style="color: black; font-size: 36px; line-height: 47px; font-family: IBM Plex Mono; font-style: italic; font-weight: 400; word-wrap: break-word">!<br/></span>
-        </div>
-        <div style="width: 867px; left: 100px; top: 238px; position: absolute; color: black; font-size: 48px; line-height: 62px; font-family: IBM Plex Mono; font-weight: 700; word-wrap: break-word">Harms of Generative AI</div>
-        <div style="width: 394px; height: 47px; left: 100px; top: 348px; position: absolute; color: black; font-size: 36px; line-height: 47px; font-family: IBM Plex Mono; font-style: italic; font-weight: 400; word-wrap: break-word">Coming soon!</div>
-        <div style="width: 1512px; height: 164px; left: 0px; top: 0px; position: absolute;">
-            <div style="width: 1512px; height: 164px; padding-top: 32px; padding-bottom: 32px; padding-left: 100px; padding-right: 1181.74px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); justify-content: flex-start; align-items: center; display: inline-flex; box-sizing: border-box">
-                <img style="width: 230.26px; height: 100px" src="images/Sami_Logo.png">
+        <title>UMSI Research</title>
+    </head>
+    <header>
+        <div class="skip"><a href="">Skip to Main Content</a></div>
+        <div class="header">
+            <div class="logo">
+                <img src="images/Sami_Logo.png" alt="Sami Logo">
             </div>
-            <div style="width: 313px; height: 31px; left: 1099px; top: 70px; position: absolute; justify-content: flex-start; align-items: center; gap: 48px; display: inline-flex">
-                <div style="width: 58px; text-align: center; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Mono; font-weight: 400; text-decoration: underline; word-wrap: break-word">Work</div>
-                <a href="about.html" style="text-decoration: none; display: block;"><div style="width: 72px; text-align: center; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">About</div></a>
-                    <a href="resume/Sami_Pratt_Resume.pdf" target="_blank" style="width: 87px; text-align: center; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word; text-decoration: none;">Resume</a>
+            <div class="nav">
+                <a href="index.html" class="nav-item current-nav">Work</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="resume/Sami_Pratt_Resume.pdf" target="_blank" class="nav-item">Resume</a>
             </div>
         </div>
-    </div>
-</body>
+    </header>
+    <body>
+        
+
+        <div class="container bg">
+            <div class="content">
+                <div class="top-left">
+                    <div class="mono-48-bold">Harms of Generative AI</div>
+                    <!-- <div class="mono-36 italics">Coming soon!</p> -->
+                </div>
+                <div class="bottom-right">
+                    <div class="mono-36 italics">Check out <a href="https://www.overleaf.com/read/mbjzqjzjzjxv">our paper</a>!</div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <!-- <footer>
+        <div class="connect">
+            <div class="title mono-36">Let's connect!</div>
+            
+            <div class="contact mono-24">
+                <a href="mailto:sppratt@umich.edu" class="underline">sppratt@umich.edu</a> & <a href="https://www.linkedin.com/in/sami-pratt/" class="underline">LinkedIn</a>
+            </div>
+            <div class="footer-blurb sans-20">built from scratch <span style="color: #8566B6;">&lt;3</span></div>
+        </div>
+    </footer> -->
+
 </html>

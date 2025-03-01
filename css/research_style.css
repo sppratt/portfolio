@@ -1,0 +1,34 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+
+.bg{
+    background-image: url("/Users/samipratt/Desktop/Current/portfolio-2/portfolio/images/background.png");
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 100%;
+    height: calc(100vh - 164px); /* Adjust the height based on the header height */
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.top-left {
+    padding-top: 74px;
+}
+
+.bottom-right {
+    padding-bottom: 100px;
+    text-align: right;
+}

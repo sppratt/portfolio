@@ -12,9 +12,90 @@ html {
 }
 
 
+.mono-32-bold {
+    font-size: 32px;
+    line-height: 42px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 700;
+    color: #2A2A2E;
+}
+
+.mono-24-bold{
+    font-size: 24px;
+    line-height: 31px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 700;
+    color: #2A2A2E;
+}
+
+.sans-24{
+    font-size: 24px;
+    line-height: 31px;
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: 400;
+    color: #2A2A2E;
+}
+
+.mono-24{
+    font-size: 24px;
+    line-height: 31px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 400;
+    color: #2A2A2E;
+}
+
+.sans-20{
+    font-size: 20px;
+    line-height: 26px;
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: 400;
+    color: #2A2A2E;
+}
+.mono-20{
+    font-size: 20px;
+    line-height: 26px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 400;
+    color: #2A2A2E;
+}
+
+.mono-20-bold{
+    font-size: 20px;
+    line-height: 26px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 700;
+    color: #2A2A2E;
+}
+
+
+.mono-36{
+    font-size: 36px;
+    line-height: 47px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 400;
+    color: #2A2A2E;
+}
+.mono-28-bold{
+    font-size: 28px;
+    line-height: 36px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 700;
+    color: #2A2A2E;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.highlight {
+    color: #8566B6;
+    font-weight: 700;
+}
+
+
 .skip {
     position: absolute;
-    color: #fafaff;
+    color: white;
     left: -1000px;
     top: auto;
     font-size: 14px;
@@ -75,14 +156,34 @@ a, .chat-button {
 }
 
 /* Hover effect for all clickable elements (links, buttons, etc.) */
-a:hover, .chat-button:hover{
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35); /* Add shadow on hover */
+a:hover{
+    text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+button:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+nav-item:hover{
+    
+    text-decoration: underline; /* Add shadow on hover */
 }
 
 container {
     padding: 0 100px;
     max-width: 100%;
     box-sizing: border-box;
+}
+
+.bg{
+    background-image: url("/Users/samipratt/Desktop/Current/portfolio-2/portfolio/images/background.png");
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 100%;
+    height: 100vh; /* Ensure the container takes up the full viewport height */
+    position: relative;
+    z-index: 1;
 }
 
 .content {
@@ -121,7 +222,7 @@ container {
     line-height: 62px;
     font-family: IBM Plex Mono, monospace;
     font-weight: 700;
-    color: black;
+    color: #2A2A2E;
 }
 
 .sans-48 {
@@ -129,7 +230,7 @@ container {
     line-height: 62px;
     font-family: IBM Plex Sans, sans-serif;
     font-weight: 400;
-    color: black;
+    color: #2A2A2E;
 }
 
 .chat-button{
@@ -141,13 +242,19 @@ container {
     line-height: 31px;
     font-family: IBM Plex Sans, sans-serif;
     text-decoration: none;
+    border: none;
 }
 
 .connect {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
     gap: 48px;
+    padding: 100px 100px;
+}
+
+.footer-blurb {
+    margin-left: auto;
 }
 
 .contact {
@@ -155,6 +262,10 @@ container {
     font-size: 24px;
     line-height: 31px;
     font-family: IBM Plex Mono, monospace;
+}
+
+.contact a:visited {
+    color: #2A2A2E; /* Ensure visited links remain black */
 }
 
 .underline {
@@ -169,6 +280,9 @@ container {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 32px 100px;
     box-sizing: border-box;
+    z-index: 10;
+    position: sticky;
+    top: 0;
 }
 
 .logo img {
@@ -185,7 +299,7 @@ container {
 
 .nav-item {
     text-align: center;
-    color: black;
+    color: #2A2A2E;
     font-size: 24px;
     line-height: 31px;
     font-family: IBM Plex Mono, monospace;
@@ -197,7 +311,7 @@ container {
 }
 
 .text {
-    color: black;
+    color: #2A2A2E;
     font-family: IBM Plex Mono, monospace;
     word-wrap: break-word;
 }
@@ -307,6 +421,8 @@ container {
 }
 
 
+
+
 /* .info-box {
     width: auto;
 
@@ -330,7 +446,7 @@ container {
     line-height: 31px;
     font-family: IBM Plex Mono, monospace;
     font-weight: 700;
-    color: rgba(0, 0, 0, 0.75);
+    color: #2A2A2E;
 }
 
 .info-content {
@@ -343,7 +459,7 @@ container {
     line-height: 31px;
     font-family: IBM Plex Sans, sans-serif;
     font-weight: 400;
-    color: black;
+    color: #2A2A2E;
     margin-top: 16px;
 }
 
@@ -353,83 +469,3 @@ container {
 
 
  */
-
-.mono-32-bold {
-    font-size: 32px;
-    line-height: 42px;
-    font-family: IBM Plex Mono, monospace;
-    font-weight: 700;
-    color: black;
-}
-
-.mono-24-bold{
-    font-size: 24px;
-    line-height: 31px;
-    font-family: IBM Plex Mono, monospace;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.75);
-}
-
-.sans-24{
-    font-size: 24px;
-    line-height: 31px;
-    font-family: IBM Plex Sans, sans-serif;
-    font-weight: 400;
-    color: black;
-}
-
-.mono-24{
-    font-size: 24px;
-    line-height: 31px;
-    font-family: IBM Plex Mono, monospace;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.75);
-}
-
-.sans-20{
-    font-size: 20px;
-    line-height: 26px;
-    font-family: IBM Plex Sans, sans-serif;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.75);
-}
-.mono-20{
-    font-size: 20px;
-    line-height: 26px;
-    font-family: IBM Plex Mono, monospace;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.75);
-}
-
-.mono-20-bold{
-    font-size: 20px;
-    line-height: 26px;
-    font-family: IBM Plex Mono, monospace;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.75);
-}
-
-
-.mono-36{
-    font-size: 36px;
-    line-height: 47px;
-    font-family: IBM Plex Mono, monospace;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.75);
-}
-.mono-28-bold{
-    font-size: 28px;
-    line-height: 36px;
-    font-family: IBM Plex Mono, monospace;
-    font-weight: 700;
-    color: black;
-}
-
-.italics {
-    font-style: italic;
-}
-
-.highlight {
-    color: #8566B6;
-    font-weight: 700;
-}
