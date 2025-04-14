@@ -224,12 +224,23 @@ container {
     font-weight: 700;
     color: #2A2A2E;
 }
+.mono-48 {
+    font-size: 48px;
+    line-height: 62px;
+    font-family: IBM Plex Mono, monospace;
+    font-weight: 400;
+    color: #2A2A2E;
+}
 
 .sans-48 {
     font-size: 48px;
     line-height: 62px;
     font-family: IBM Plex Sans, sans-serif;
     font-weight: 400;
+    color: #2A2A2E;
+}
+
+a {
     color: #2A2A2E;
 }
 

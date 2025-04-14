@@ -10,8 +10,50 @@
     margin-bottom: 96px; */
 }
 
+.project-header {
+    display: flex;
+    justify-content: space-between; /* Space out the text and logo */
+    align-items: flex-start; /* Align items at the top */
+    position: relative;
+    padding: 16px; /* Add padding for spacing */
+    gap: 16px; /* Add spacing between text and logo */
+}
 
+.text-container {
+    display: flex;
+    flex-direction: column; /* Stack title, subtitle, and note vertically */
+    gap: 8px; /* Add spacing between title and subtitle-note */
+}
 
+.subtitle-note {
+    display: flex;
+    justify-content: space-between; /* Space out subtitle and note */
+    align-items: center; /* Align subtitle and note vertically */
+    gap: 16px; /* Add spacing between subtitle and note */
+}
+
+.project-header .title {
+    
+    word-wrap: break-word;
+}
+
+.project-header .subtitle {
+    
+    text-align: left; /* Align subtitle to the left */
+}
+
+.project-header .note {
+    
+    text-align: right; /* Align note to the right */
+    margin-left: auto; /* Push the note to the right */
+}
+
+.project-header .glansis_logo {
+    width: 20%; /* Responsive width */
+    max-width: 300px; /* Limit the maximum size */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: auto; /* Push the logo to the right */
+}
 
 .content {
     display: grid;
@@ -64,16 +106,11 @@
     box-sizing: border-box;
 }
 
-
-
 .info-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
-
-
 
 .info-content {
     display: flex;
@@ -110,8 +147,6 @@
     padding: 48px; 
 }
 
-
-
 .extra-grid{
     display: grid;
     grid-template-columns: 1fr 24px 1fr;
@@ -131,7 +166,6 @@
     width: 100%;
 }
 
-
 .special-grid{
     grid-column: 1 / -1;
     display: grid;
@@ -142,18 +176,15 @@
     background: #E4D9FF;
     border-radius: 10px;
     padding: 48px;
-
 }
 
 .left{
     grid-column: 1 / span 1; /* Spans first to the middle column */
-
 }
   
-  /* Right item spans from after the middle to the end */
+/* Right item spans from after the middle to the end */
 .right{
     grid-column: 3 / span 1; /* Spans middle to the last column */
-
 }
 
 .space-16{
@@ -163,7 +194,6 @@
 .bold{
     font-weight: 700;
 }
-
 
 .figma{
     width: 800px; 
