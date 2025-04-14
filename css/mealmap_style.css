@@ -1,0 +1,213 @@
+.container {
+    padding: 0px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.project-header{
+    margin: 74px 100px 96px;
+    /* margin-top: 74px;
+    margin-bottom: 96px; */
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between; /* Space out the text and logo */
+    align-items: flex-start; /* Align items at the top */
+    position: relative;
+    padding: 16px; /* Add padding for spacing */
+    gap: 16px; /* Add spacing between text and logo */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; /* Stack title, subtitle, and note vertically */
+    gap: 8px; /* Add spacing between title and subtitle-note */
+}
+
+.subtitle-note {
+    display: flex;
+    justify-content: space-between; /* Space out subtitle and note */
+    align-items: center; /* Align subtitle and note vertically */
+    gap: 16px; /* Add spacing between subtitle and note */
+}
+
+.project-header .title {
+    
+    word-wrap: break-word;
+}
+
+.project-header .subtitle {
+    
+    text-align: left; /* Align subtitle to the left */
+}
+
+.project-header .note {
+    
+    text-align: right; /* Align note to the right */
+    margin-left: auto; /* Push the note to the right */
+}
+
+.project-header .glansis_logo {
+    width: 20%; /* Responsive width */
+    max-width: 300px; /* Limit the maximum size */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: auto; /* Push the logo to the right */
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 24px 1fr 24px 1fr;
+    /* grid-gap: 24px; */
+    row-gap: 144px;
+    position: relative;
+}
+
+.text {
+    color: black;
+    font-family: IBM Plex Mono, monospace;
+    word-wrap: break-word;
+}
+
+.title {
+    font-size: 48px;
+    line-height: 62px;
+    font-weight: 400;
+    /* grid-column: 1 / -1; */
+}
+
+.subtitle {
+    font-size: 20px;
+    line-height: 26px;
+    font-style: italic;
+    text-decoration: underline;
+    /* grid-column: 1 / -1; */
+    text-align: center;
+}
+
+.note {
+    font-size: 16px;
+    /* grid-column: 1 / -1; */
+    text-align: right;
+}
+
+.glansis_logo {
+    /* width: 100%; */
+    width: 300px;
+    height: auto;
+    /* grid-column: 1 / -1; */
+}
+
+.info-box {
+    grid-column: 1 / 6; /* Spans the full width of the grid */
+    background: #E4D9FF; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 48px; /* Add 48px padding on all sides */
+    box-sizing: border-box; /* Ensure padding is included in the element's dimensions */
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space out the groups evenly */
+    align-items: flex-start; /* Align items at the top */
+    gap: 16px; /* Add spacing between groups */
+}
+
+.info-group {
+    display: flex;
+    flex-direction: column; /* Stack header and content vertically */
+    align-items: center; /* Center header and content horizontally */
+    text-align: center; /* Center text within each group */
+    flex: 1; /* Ensure all groups take up equal space */
+}
+
+.info-header {
+    font-size: 24px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 8px; /* Add spacing below the header */
+}
+
+
+.section-title{
+    grid-column: 1 / 2;
+}
+
+.full-width{
+    grid-column: 1 / -1;
+}
+
+.three-tiles{
+    display:grid;
+    grid-template-columns: 1fr 24px 1fr 24px 1fr;
+    row-gap: 24px;
+}
+
+.three-right{
+    grid-column: 5 / span 1;
+}
+
+.outline-box{
+    border: 1px solid #E4D9FF;
+    border-radius: 10px;
+    padding: 48px; 
+}
+
+.extra-grid{
+    display: grid;
+    grid-template-columns: 1fr 24px 1fr;
+}
+.section-content{
+    /* margin-top: 16px; */
+    grid-column: 3 / -1;
+}
+
+.split-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+}
+
+.design-process{
+    width: 100%;
+}
+
+.special-grid{
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 24px 1fr;
+}
+
+
+.box{
+    background: #E4D9FF;
+    border-radius: 10px;
+    padding: 48px;
+}
+
+.box2 {
+    border: 2px #E4D9FF solid;
+    border-radius: 10px;
+    padding: 48px;
+}
+
+.left{
+    grid-column: 1 / span 1; /* Spans first to the middle column */
+}
+  
+/* Right item spans from after the middle to the end */
+.right{
+    grid-column: 3 / span 1; /* Spans middle to the last column */
+}
+
+.space-16{
+    margin-bottom: 16px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.figma{
+    width: 800px; 
+    height: 450px; 
+    background: #E4D9FF
+}
