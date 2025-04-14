@@ -99,29 +99,33 @@
 }
 
 .info-box {
-    grid-column: 1 / 6;
-    background: #E4D9FF;
-    border-radius: 10px;
-    padding: 48px;
-    box-sizing: border-box;
+    grid-column: 1 / 6; /* Spans the full width of the grid */
+    background: #E4D9FF; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 48px; /* Add 48px padding on all sides */
+    box-sizing: border-box; /* Ensure padding is included in the element's dimensions */
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space out the groups evenly */
+    align-items: flex-start; /* Align items at the top */
+    gap: 16px; /* Add spacing between groups */
+}
+
+.info-group {
+    display: flex;
+    flex-direction: column; /* Stack header and content vertically */
+    align-items: center; /* Center header and content horizontally */
+    text-align: center; /* Center text within each group */
+    flex: 1; /* Ensure all groups take up equal space */
 }
 
 .info-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-size: 24px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 8px; /* Add spacing below the header */
 }
 
-.info-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 48px;
-}
-
-.info-detail {
-    text-align: center;
-}
 
 .section-title{
     grid-column: 1 / 2;
