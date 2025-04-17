@@ -211,3 +211,64 @@
     height: 450px; 
     background: #E4D9FF
 }
+
+.image-container {
+    display: flex; /* Use Flexbox to align images side by side */
+    justify-content: space-between; /* Ensure images are spaced evenly */
+    gap: 0; /* Remove any gap between the images */
+    width: 100%; /* Ensure the container takes up the full width */
+}
+.image-container img {
+    width: 50%; /* Each image takes up half the width */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the images fill their space without distortion */
+}
+
+.persona-images {
+    display: flex; /* Use Flexbox to stack images vertically */
+    flex-direction: column; /* Stack images one on top of the other */
+    align-items: center; /* Center images horizontally */
+    gap: 16px; /* Add spacing between the images */
+    width: 100%; /* Ensure the container takes up the full width */
+    box-sizing: border-box; /* Include padding and borders in the width calculation */
+}
+
+
+.persona-images img {
+    width: 100%; /* Make the images take up the full width of the container */
+    max-width: 100%; /* Prevent images from exceeding the container's width */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the images fit within their allocated space */
+}
+
+.user-flows {
+    display: flex;
+    flex-direction: column; /* Stack user flows vertically */
+    gap: 48px; /* Add 48px spacing between each user flow */
+    width: 100%; /* Ensure the section takes up the full width */
+    box-sizing: border-box; /* Include padding and borders in the width calculation */
+    margin-top: 48px; /* Add 48px spacing between the "User Flows" title and the first flow */
+}
+
+.user-flow {
+    display: flex;
+    flex-direction: column; /* Stack title and image vertically */
+    gap: 16px; /* Add 16px spacing between the title and the image */
+    align-items: flex-start; /* Align content to the left */
+    width: 100%; /* Ensure each flow takes up the full width */
+}
+
+.flow-title {
+    font-size: 24px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    color: #2A2A2E;
+    word-wrap: break-word; /* Ensure long text wraps */
+}
+
+.user-flow img {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the image fits within its allocated space */
+    border-radius: 8px; /* Optional: Add rounded corners to the image */
+}

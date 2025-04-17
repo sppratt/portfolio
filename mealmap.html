@@ -91,616 +91,190 @@
                 </div>
             </div>
 
+            <div class="section-title mono-32-bold">Key Features & Functionality</div>
+                <div class="section-content extra-grid">
+                    <div class="split-content left">
+                        <div class="box left">
+                            <div class="space-16 mono-24-bold">1. Smart list creation</div>
+                            <div class="sans-24">Build and share lists, integrate dietary preferences, and check store inventory in real time.</div>
+                        </div>
+                        <div class="box left">
+                            <div class="space-16 mono-24-bold">3. Seamless checkout</div>
+                            <div class="sans-24">Skip the lines with in-app scanning and payment.</div>
+                        </div>
+                        <div class="blank left"></div>
+                    </div>
+                    
+                    <div class="split-content right">
+                        <div class="box right">
+                            <div class="space-16 mono-24-bold">2. Optimized store navigation</div>
+                            <div class="sans-24">Find items quickly with personalized routes and dynamic cart tracking.</div>
+                            
+                        </div>
+                        <div class="box right">
+                            <div class="space-16 mono-24-bold">4. Health and efficiency tools</div>
+                            <div class="sans-24">Get dietary alerts, compare nutrition details, and avoid crowds by shopping during less busy hours.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function adjustBlankHeight() {
+                        const blank = document.querySelector('.blank');
+
+                        // Get left column inner elements
+                        const leftElements = document.querySelectorAll('.split-content.left .mono-24-bold, .split-content.left .sans-24');
+                        const rightBoxes = document.querySelectorAll('.split-content.right .box');
+
+                        // Helper function to calculate the total height including margins
+                        function getTotalHeight(elements) {
+                            return Array.from(elements).reduce((acc, el) => {
+                                const rect = el.getBoundingClientRect();
+                                const computedStyle = window.getComputedStyle(el);
+                                const marginTop = parseFloat(computedStyle.marginTop);
+                                const marginBottom = parseFloat(computedStyle.marginBottom);
+                                return acc + rect.height + marginTop + marginBottom;
+                            }, 0);
+                        }
+
+                        // Calculate left height (including 48px padding per .box)
+                        const leftHeight = getTotalHeight(leftElements) + (48 * 4);
+
+                        // Calculate right height
+                        const rightHeight = getTotalHeight(rightBoxes);
+
+                        // Update the blank height
+                        const difference = rightHeight - leftHeight;
+                        blank.style.height = difference > 0 ? `${difference}px` : '0px';
+                    }
+
+                    // Ensure the script runs on page load and window resize
+                    window.addEventListener('load', adjustBlankHeight);
+                    window.addEventListener('resize', adjustBlankHeight);
+                </script>
+
+        <div class="full-width">
+            <div class="mono-32-bold">Ideation Sketches</div>
+
+            <div class="image-container">
+                <img src="images/mealmap_sketch1.png" alt="Sketch 1" />
+                <img src="images/mealmap_sketch2.png" alt="Sketch 2" />
+            </div>
+            
+            
+        </div>
+        <div class="section-title mono-32-bold">Storyboarding</div>
+
+        <div class ="section-content">
+            <img src="images/mealmap_storyboard.png" alt="Storyboard" />
+        </div>
+
+        <div class="section-title"><span class="mono-32-bold">User Personas</span><br><br><span class="sans-24">Designing personas helped us understand diverse user needs, behaviors, and motivations. 
+
+            <br><br><span class="sans-24-bold">Primary persona:</span> parents with kids
+            
+            <br><br><span class="sans-24-bold">Secondary persona:</span> college students and young working adults</span></div>
+        
+
+        <div class ="section-content persona-images">
+            <img src="images/Persona1.png" alt="Persona1" />
+            <img src="images/Persona2.png" alt="Persona2" />
+        </div>
+
+        <div class="section-title"><span class="mono-32-bold">Information Architecture</span><br><br><span class="sans-24">Designing the app flow was a key early step, helping us identify essential features, determine effective interactions, and gain clarity on how to best support user needs.</div>
+        
+
+        <div class ="section-content persona-images">
+            <img src="images/userflow_MM.png" alt="UserFlow" />
+        </div>
+
+        <div class="section-title mono-32-bold">Wireframes</div>
+        
+
+        <div class ="section-content persona-images">
+            <img src="images/Wireframes.png" alt="Wireframes" />
+        </div>
+
+        <div class="section-title mono-32-bold">Hi-fi Prototype 
+            <br><a href="https://www.figma.com/proto/CKAuClmFWlrfckqiMP380e/482-Grocery-App?page-id=341%3A341&node-id=388-1551&viewport=-732%2C474%2C0.09&t=vnWvo06lsPI8kuF5-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=388%3A1551&show-proto-sidebar=1" 
+               target="_blank" 
+               class="underline text subtitle sans-24">
+               Link to the full prototype
+            </a>
+        </div>
+        
+        <div class ="section-content persona-images">
+            <img src="images/Hi-fi.png" alt="Hi-fi" />
+        </div>
+
+
+        <div class="full-width">
+            <div class="mono-32-bold">User Flows</div>
+            <div class="section-content user-flows">
+                <div class="user-flow">
+                    <div class="flow-title mono-24-bold">1.1 Creating a new shopping list</div>
+                    <img src="images/shoppinglist_userflow.png" alt="Creating a new shopping list" />
+                </div>
+                <div class="user-flow">
+                    <div class="flow-title mono-24-bold">2.1 In-store shopping experience - using premade shopping list</div>
+                    <img src="images/instore_opt1.png" alt="In-store shopping experience - premade shopping list" />
+                </div>
+                <div class="user-flow">
+                    <div class="flow-title mono-24-bold">2.2 In-store shopping experience - using Scan-as-you-go</div>
+                    <img src="images/instore_opt2.png" alt="In-store shopping experience - Scan-as-you-go" />
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-title mono-32-bold">Impact</div>
+                <div class="section-content extra-grid">
+                    <div class="split-content left">
+                        <div class="outline-box left">
+                            <div class="space-16 mono-24-bold">Increased Accessibility</div>
+                            <div class="sans-24">Empowers users with allergies, mobility challenges, and time constraints by reducing stress and making grocery shopping easier and safer.</div>
+                        </div>
+                        <div class="outline-box left">
+                            <div class="space-16 mono-24-bold">Improved Collaboration and Household Organization</div>
+                            <div class="sans-24">Facilitates better communication and planning within households or groups.</div>
+                        </div>
+                        <div class="blank left"></div>
+                    </div>
+                    
+                    <div class="split-content right">
+                        <div class="outline-box right">
+                            <div class="space-16 mono-24-bold">Cost and Time Savings</div>
+                            <div class="sans-24">Comparing store prices and optimizing shopping routes with mobile checkout saves time and money.</div>
+                            
+                        </div>
+                        <div class="outline-box right">
+                            <div class="space-16 mono-24-bold">Sustainability</div>
+                            <div class="sans-24">Reducing time spent in stores and planning purchases more effectively minimizes food waste and excess consumption.</div>
+                        </div>
+                        <div class="outline-box right">
+                            <div class="space-16 mono-24-bold">Informed and Safer Choices</div>
+                            <div class="sans-24">Real-time dietary warnings for restrictions and allergens help users avoid health risks and shop with greater confidence.</div>
+                        </div>
+                    </div>
+                </div>
+        
+
             
         <!-- Additional sections like Overview, Users, Features, Personas etc. will be structured the same way -->
     </main>
-</body>
-<body>
-    
-   
-       Overview
-      </div>
-     </div>
-     <div class="mealmap-style-17">
-      Users
-     </div>
-     <div class="mealmap-style-18">
-      Use Cases
-     </div>
-     <div class="mealmap-style-19">
-      <div class="mealmap-style-20">
-       Key Features &amp; Functionality
-      </div>
-      <div class="mealmap-style-21">
-       <div class="mealmap-style-22">
-       </div>
-       <div class="mealmap-style-23">
-        Smart list creation
-       </div>
-       <div class="mealmap-style-24">
-        Build and share lists, integrate dietary preferences, and check store inventory in real time.
-       </div>
-      </div>
-      <div class="mealmap-style-25">
-       <div class="mealmap-style-26">
-       </div>
-       <div class="mealmap-style-27">
-        Optimized store navigation
-       </div>
-       <div class="mealmap-style-28">
-        Find items quickly with personalized routes and dynamic cart tracking.
-       </div>
-      </div>
-      <div class="mealmap-style-29">
-       <div class="mealmap-style-30">
-       </div>
-       <div class="mealmap-style-31">
-        Health and efficiency tools
-       </div>
-       <div class="mealmap-style-32">
-        Get dietary alerts, compare nutrition details, and avoid crowds by shopping during less busy hours.
-       </div>
-      </div>
-      <div class="mealmap-style-33">
-       <div class="mealmap-style-34">
-       </div>
-       <div class="mealmap-style-35">
-        Seamless checkout
-       </div>
-       <div class="mealmap-style-36">
-        Skip the lines with in-app scanning and payment.
-       </div>
-      </div>
-     </div>
-     <div class="mealmap-style-37">
-      Ideation Sketches
-     </div>
-     <div class="mealmap-style-38">
-      Ideation Sketches
-     </div>
-     <img class="mealmap-style-39" src="images/mealmap_storyboard.png"/>
-     <div class="mealmap-style-40">
-      <span class="mealmap-style-41">
-       Designing personas helped us understand diverse user needs, behaviors, and motivations.
-       <br/>
-       <br/>
-      </span>
-      <span class="mealmap-style-42">
-       Primary persona:
-      </span>
-      <span class="mealmap-style-43">
-       parents with kids
-       <br/>
-      </span>
-      <span class="mealmap-style-44">
-       <br/>
-       Secondary personas:
-      </span>
-      <span class="mealmap-style-45">
-       college students and young working adults
-      </span>
-     </div>
-     <div class="mealmap-style-46">
-      Designing the app flow was a key early step, helping us identify essential features, determine effective interactions, and gain clarity on how to best support user needs.
-     </div>
-     <div class="mealmap-style-47">
-      Explore the full prototype
-     </div>
-     <div class="mealmap-style-48">
-      User Personas
-     </div>
-     <div class="mealmap-style-49">
-      Information Architecture
-     </div>
-     <div class="mealmap-style-50">
-      Wireframes
-     </div>
-     <div class="mealmap-style-51">
-      Hi-fi Prototype
-     </div>
-     <div class="mealmap-style-52">
-      <div class="mealmap-style-53">
-       Impact
-      </div>
-      <div class="mealmap-style-54">
-       <div class="mealmap-style-55">
-       </div>
-       <div class="mealmap-style-56">
-        Cost and Time Savings
-       </div>
-       <div class="mealmap-style-57">
-        <span class="mealmap-style-58">
-         Comparing store prices
-        </span>
-        <span class="mealmap-style-59">
-         and
-        </span>
-        <span class="mealmap-style-60">
-         optimizing shopping routes
-        </span>
-        <span class="mealmap-style-61">
-        </span>
-        <span class="mealmap-style-62">
-         with mobile checkout
-        </span>
-        <span class="mealmap-style-63">
-         saves time and money
-        </span>
-        <span class="mealmap-style-64">
-         .
-        </span>
-       </div>
-      </div>
-      <div class="mealmap-style-65">
-       <div class="mealmap-style-66">
-       </div>
-       <div class="mealmap-style-67">
-        Sustainability
-       </div>
-       <div class="mealmap-style-68">
-        <span class="mealmap-style-69">
-         Reducing time spent in stores
-        </span>
-        <span class="mealmap-style-70">
-         and
-        </span>
-        <span class="mealmap-style-71">
-         planning purchases
-        </span>
-        <span class="mealmap-style-72">
-         more effectively minimizes
-        </span>
-        <span class="mealmap-style-73">
-         food waste and excess consumption
-        </span>
-        <span class="mealmap-style-74">
-         .
-        </span>
-       </div>
-      </div>
-      <div class="mealmap-style-75">
-       <div class="mealmap-style-76">
-       </div>
-       <div class="mealmap-style-77">
-        Informed and Safer Choices
-       </div>
-       <div class="mealmap-style-78">
-        <span class="mealmap-style-79">
-         Real-time dietary warnings
-        </span>
-        <span class="mealmap-style-80">
-         for
-        </span>
-        <span class="mealmap-style-81">
-         restrictions
-        </span>
-        <span class="mealmap-style-82">
-         and
-        </span>
-        <span class="mealmap-style-83">
-         allergens
-        </span>
-        <span class="mealmap-style-84">
-         help users
-        </span>
-        <span class="mealmap-style-85">
-         avoid health risks
-        </span>
-        <span class="mealmap-style-86">
-        </span>
-        <span class="mealmap-style-87">
-         and shop with
-        </span>
-        <span class="mealmap-style-88">
-         greater confidence
-        </span>
-        <span class="mealmap-style-89">
-         .
-        </span>
-       </div>
-      </div>
-      <div class="mealmap-style-90">
-       <div class="mealmap-style-91">
-       </div>
-       <div class="mealmap-style-92">
-        Improved Collaboration and Household Organization
-       </div>
-       <div class="mealmap-style-93">
-        <span class="mealmap-style-94">
-         Facilitates
-        </span>
-        <span class="mealmap-style-95">
-         better communication
-        </span>
-        <span class="mealmap-style-96">
-         and
-        </span>
-        <span class="mealmap-style-97">
-         planning
-        </span>
-        <span class="mealmap-style-98">
-         within households or groups.
-        </span>
-       </div>
-      </div>
-      <div class="mealmap-style-99">
-       <div class="mealmap-style-100">
-       </div>
-       <div class="mealmap-style-101">
-        Increased Accessibility
-       </div>
-       <div class="mealmap-style-102">
-        <span class="mealmap-style-103">
-         Empowers users with
-        </span>
-        <span class="mealmap-style-104">
-         allergies
-        </span>
-        <span class="mealmap-style-105">
-         ,
-        </span>
-        <span class="mealmap-style-106">
-         mobility challenges
-        </span>
-        <span class="mealmap-style-107">
-         , and
-        </span>
-        <span class="mealmap-style-108">
-         time constraints
-        </span>
-        <span class="mealmap-style-109">
-         by
-        </span>
-        <span class="mealmap-style-110">
-         reducing stress
-        </span>
-        <span class="mealmap-style-111">
-         and making grocery shopping
-        </span>
-        <span class="mealmap-style-112">
-         easier and safer
-        </span>
-        <span class="mealmap-style-113">
-         .
-        </span>
-       </div>
-      </div>
-     </div>
-     <div class="mealmap-style-114">
-      <div class="mealmap-style-115">
-       Let’s connect!
-      </div>
-      <div class="mealmap-style-116">
-       <span class="mealmap-style-117">
-        sppratt@umich.edu
-       </span>
-       <span class="mealmap-style-118">
-        &amp;
-       </span>
-       <span class="mealmap-style-119">
-        LinkedIn
-       </span>
-      </div>
-     </div>
-     <div class="mealmap-style-120">
-      <div class="mealmap-style-121">
-      </div>
-      <div class="mealmap-style-122">
-       <div class="mealmap-style-123">
-        ROLE
-       </div>
-       <div class="mealmap-style-124">
-        UX Researcher, Group Project
-       </div>
-      </div>
-     </div>
-     <div class="mealmap-style-125">
-      <div class="mealmap-style-126">
-      </div>
-      <div class="mealmap-style-127">
-       DURATION
-      </div>
-      <div class="mealmap-style-128">
-       August 2024 to December 2024
-      </div>
-     </div>
-     <div class="mealmap-style-129">
-      <div class="mealmap-style-130">
-      </div>
-      <div class="mealmap-style-131">
-       TOOLS
-      </div>
-      <div class="mealmap-style-132">
-       Figma, Canva, Miro
-      </div>
-     </div>
-     <div class="mealmap-style-133">
-      <div class="mealmap-style-134">
-      </div>
-      <div class="mealmap-style-135">
-       <span class="mealmap-style-136">
-        Planned shoppers
-       </span>
-       <span class="mealmap-style-137">
-        value
-       </span>
-       <span class="mealmap-style-138">
-        structure
-       </span>
-       <span class="mealmap-style-139">
-        and
-       </span>
-       <span class="mealmap-style-140">
-        efficiency
-       </span>
-       <span class="mealmap-style-141">
-        , using
-       </span>
-       <span class="mealmap-style-142">
-        detailed lists
-       </span>
-       <span class="mealmap-style-143">
-        to meet
-       </span>
-       <span class="mealmap-style-144">
-        household needs
-       </span>
-       <span class="mealmap-style-145">
-        ,
-       </span>
-       <span class="mealmap-style-146">
-        dietary restrictions
-       </span>
-       <span class="mealmap-style-147">
-        , and
-       </span>
-       <span class="mealmap-style-148">
-        meal prep goals
-       </span>
-       <span class="mealmap-style-149">
-        . They aim to
-       </span>
-       <span class="mealmap-style-150">
-        minimize time in the store
-       </span>
-       <span class="mealmap-style-151">
-        by preparing in advance,
-       </span>
-       <span class="mealmap-style-152">
-        reducing waste
-       </span>
-       <span class="mealmap-style-153">
-        , and
-       </span>
-       <span class="mealmap-style-154">
-        staying within budget
-       </span>
-       <span class="mealmap-style-155">
-        .
-       </span>
-      </div>
-     </div>
-     <div class="mealmap-style-156">
-      <div class="mealmap-style-157">
-      </div>
-      <div class="mealmap-style-158">
-       <span class="mealmap-style-159">
-        On-the-go shoppers
-       </span>
-       <span class="mealmap-style-160">
-        prioritize
-       </span>
-       <span class="mealmap-style-161">
-        convenience
-       </span>
-       <span class="mealmap-style-162">
-        and
-       </span>
-       <span class="mealmap-style-163">
-        flexibility
-       </span>
-       <span class="mealmap-style-164">
-        , making
-       </span>
-       <span class="mealmap-style-165">
-        quick
-       </span>
-       <span class="mealmap-style-166">
-        ,
-       </span>
-       <span class="mealmap-style-167">
-        last-minute
-       </span>
-       <span class="mealmap-style-168">
-       </span>
-       <span class="mealmap-style-169">
-        trips
-       </span>
-       <span class="mealmap-style-170">
-        without detailed plans. They rely on features like
-       </span>
-       <span class="mealmap-style-171">
-        real-time navigation
-       </span>
-       <span class="mealmap-style-172">
-        ,
-       </span>
-       <span class="mealmap-style-173">
-        flexible list updates
-       </span>
-       <span class="mealmap-style-174">
-        and scanning as you go, and
-       </span>
-       <span class="mealmap-style-175">
-        in-app checkout
-       </span>
-       <span class="mealmap-style-176">
-        to
-       </span>
-       <span class="mealmap-style-177">
-        save time
-       </span>
-       <span class="mealmap-style-178">
-        and
-       </span>
-       <span class="mealmap-style-179">
-        streamline their experience
-       </span>
-       <span class="mealmap-style-180">
-        .
-       </span>
-      </div>
-     </div>
-     <div class="mealmap-style-181">
-      <div class="mealmap-style-182">
-      </div>
-      <div class="mealmap-style-183">
-       <span class="mealmap-style-184">
-        At home
-       </span>
-       <span class="mealmap-style-185">
-        , MealMap helps users
-       </span>
-       <span class="mealmap-style-186">
-        create personalized shopping lists
-       </span>
-       <span class="mealmap-style-187">
-        based on
-       </span>
-       <span class="mealmap-style-188">
-        preferences
-       </span>
-       <span class="mealmap-style-189">
-        and
-       </span>
-       <span class="mealmap-style-190">
-        past purchases
-       </span>
-       <span class="mealmap-style-191">
-        .
-       </span>
-       <span class="mealmap-style-192">
-        Shared lists
-       </span>
-       <span class="mealmap-style-193">
-        ensure all needs are addressed, while
-       </span>
-       <span class="mealmap-style-194">
-        store inventory checks
-       </span>
-       <span class="mealmap-style-195">
-        save unnecessary trips and make preparation seamless.
-       </span>
-      </div>
-     </div>
-     <div class="mealmap-style-196">
-      <div class="mealmap-style-197">
-      </div>
-      <div class="mealmap-style-198">
-       <span class="mealmap-style-199">
-        In-store
-       </span>
-       <span class="mealmap-style-200">
-        , MealMap optimizes the shopping experience with
-       </span>
-       <span class="mealmap-style-201">
-        guided navigation
-       </span>
-       <span class="mealmap-style-202">
-        ,
-       </span>
-       <span class="mealmap-style-203">
-        real-time updates
-       </span>
-       <span class="mealmap-style-204">
-        as you place items in your cart, and
-       </span>
-       <span class="mealmap-style-205">
-        in-app scanning
-       </span>
-       <span class="mealmap-style-206">
-        and
-       </span>
-       <span class="mealmap-style-207">
-        payment
-       </span>
-       <span class="mealmap-style-208">
-        . Users can
-       </span>
-       <span class="mealmap-style-209">
-        shop efficiently
-       </span>
-       <span class="mealmap-style-210">
-        , skipping checkout lines for a
-       </span>
-       <span class="mealmap-style-211">
-        stress-free trip
-       </span>
-       <span class="mealmap-style-212">
-        .
-       </span>
-      </div>
-     </div>
-     <div class="mealmap-style-213">
-      <div class="mealmap-style-214">
-       User Flows
-      </div>
-      <div class="mealmap-style-215">
-       1.1 Creating a new shopping list
-      </div>
-      <div class="mealmap-style-216">
-       2.1 In-store shopping experience - using premade shopping list
-      </div>
-      <div class="mealmap-style-217">
-       2.2 In-store shopping experience - using Scan-as-you-go
-      </div>
-      <img class="mealmap-style-218" src="images/shoppinglist_userflow.png"/>
-      <img class="mealmap-style-219" src="images/instore_opt1.png"/>
-      <img class="mealmap-style-220" src="images/instore_opt2.png"/>
-     </div>
-     <img class="mealmap-style-221" src="images/Persona1.png"/>
-     <img class="mealmap-style-222" src="images/Persona2.png"/>
-     <img class="mealmap-style-223" src="images/userflow_MM.png"/>
-     <img class="mealmap-style-224" src="images/Wireframes.png"/>
-     <img class="mealmap-style-225" src="images/Hi-fi.png"/>
-     <img class="mealmap-style-226" src="images/mealmap_sketch1.png"/>
-     <img class="mealmap-style-227" src="images/mealmap_sketch2.png"/>
-     <div class="mealmap-style-228">
-      Jump to final design
-     </div>
-     <div class="mealmap-style-229">
-      <div class="mealmap-style-230">
-      </div>
-      <div class="mealmap-style-231">
-       <div class="mealmap-style-232">
-        Work
-       </div>
-       <a class="mealmap-style-233" href="about.html">
-        <div class="mealmap-style-234">
-         About
+    <footer>
+            
+        <div class="connect">
+            <div class="title mono-36">Let's connect!</div>
+            
+            <div class="contact mono-24">
+                <a href="mailto:sppratt@umich.edu" class="underline">sppratt@umich.edu</a> & <a href="https://www.linkedin.com/in/sami-pratt/" class="underline">LinkedIn</a>
+            </div>
+            <div class="footer-blurb sans-20">built from scratch <span style="color: #8566B6;">&lt;3</span></div>
         </div>
-       </a>
-       <a class="mealmap-style-235" href="resume/Sami_Pratt_Resume.pdf" target="_blank">
-        Resume
-       </a>
-      </div>
-      <a class="mealmap-style-236" href="index.html">
-       <img class="mealmap-style-237" src="images/Sami_Logo.png"/>
-      </a>
-     </div>
-     <!-- <div style="width: 1512px; height: 164px; left: 0px; top: 0px; position: absolute">
-              <div style="width: 1512px; height: 164px; padding-top: 32px; padding-bottom: 32px; padding-left: 100px; padding-right: 1181.74px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); justify-content: flex-start; align-items: center; display: inline-flex">
-                  <a href="index.html" style="text-decoration: none; display: block;">
-                      <img style="width: 230.26px; height: 100px" src="images/Sami_Logo.png" />
-                  </a>
-              </div>
-              <div style="width: 313px; height: 31px; left: 1099px; top: 70px; position: absolute; justify-content: flex-start; align-items: center; gap: 48px; display: inline-flex">
-                  <div style="width: 58px; text-align: center; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Mono; font-weight: 400; text-decoration: underline; word-wrap: break-word">Work</div>
-                  <div style="width: 72px; text-align: center; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">About</div>
-                  <div style="width: 87px; text-align: center; color: black; font-size: 24px; line-height: 31px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">Resume</div>
-              </div>
-          </div> -->
-    </div>
-   </body>
+
+
+    </footer> 
+</body>
+
   </html>
-  
