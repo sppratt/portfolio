@@ -1,0 +1,23 @@
+.intro-content {
+    max-width: 100%;
+    position: relative;
+    margin: 0px 100px;
+    margin-bottom: 144px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 24px 3fr;
+    /* grid-gap: 24px; */
+    row-gap: 144px;
+    position: relative;
+}
+
+.section-title{
+    grid-column: 1 / 2;
+}
+
+.section-content{
+    /* margin-top: 16px; */
+    grid-column: 3 / -1;
+}
